@@ -1,0 +1,112 @@
+value,general_class,class,color_hint,sub_class
+0,Terra Firma,True desert,FEFECC,3% short vegetation cover
+1,Terra Firma,True desert,FAFAC3,7% short vegetation cover
+2,Terra Firma,Semi-arid,F7F7BB,11% short vegetation cover
+3,Terra Firma,Semi-arid,F4F4B3,15% short vegetation cover
+4,Terra Firma,Semi-arid,F1F1AB,19% short vegetation cover
+5,Terra Firma,Semi-arid,EDEDA2,23% short vegetation cover
+6,Terra Firma,Semi-arid,EAEA9A,27% short vegetation cover
+7,Terra Firma,Semi-arid,E7E792,31% short vegetation cover
+8,Terra Firma,Semi-arid,E4E48A,35% short vegetation cover
+9,Terra Firma,Semi-arid,E0E081,39% short vegetation cover
+10,Terra Firma,Semi-arid,DDDD79,43% short vegetation cover
+11,Terra Firma,Semi-arid,DADA71,47% short vegetation cover
+12,Terra Firma,Semi-arid,D7D769,51% short vegetation cover
+13,Terra Firma,Semi-arid,D3D360,55% short vegetation cover
+14,Terra Firma,Semi-arid,D0D058,59% short vegetation cover
+15,Terra Firma,Semi-arid,CDCD50,63% short vegetation cover
+16,Terra Firma,Semi-arid,CACA48,67% short vegetation cover
+17,Terra Firma,Semi-arid,C6C63F,71% short vegetation cover
+18,Terra Firma,Semi-arid,C3C337,75% short vegetation cover
+19,Terra Firma,Dense short vegetation,C0C02F,79% short vegetation cover
+20,Terra Firma,Dense short vegetation,BDBD27,83% short vegetation cover
+21,Terra Firma,Dense short vegetation,B9B91E,87% short vegetation cover
+22,Terra Firma,Dense short vegetation,B6B616,91% short vegetation cover
+23,Terra Firma,Dense short vegetation,B3B30E,95% short vegetation cover
+24,Terra Firma,Dense short vegetation,B0B006,100% short vegetation cover
+25,Terra Firma,Tree cover,609C60,3m trees
+26,Terra Firma,Tree cover,5C985C,4m trees
+27,Terra Firma,Tree cover,589558,5m trees
+28,Terra Firma,Tree cover,549254,6m trees
+29,Terra Firma,Tree cover,508E50,7m trees
+30,Terra Firma,Tree cover,4C8B4C,8m trees
+31,Terra Firma,Tree cover,488848,9m trees
+32,Terra Firma,Tree cover,448544,10m trees
+33,Terra Firma,Tree cover,408140,11m trees
+34,Terra Firma,Tree cover,3C7E3C,12m trees
+35,Terra Firma,Tree cover,387B38,13m trees
+36,Terra Firma,Tree cover,347834,14m trees
+37,Terra Firma,Tree cover,317431,15m trees
+38,Terra Firma,Tree cover,2D712D,16m trees
+39,Terra Firma,Tree cover,296E29,17m trees
+40,Terra Firma,Tree cover,256B25,18m trees
+41,Terra Firma,Tree cover,216721,19m trees
+42,Terra Firma,Tree cover,1D641D,20m trees
+43,Terra Firma,Tree cover,196119,21m trees
+44,Terra Firma,Tree cover,155E15,22m trees
+45,Terra Firma,Tree cover,115A11,23m trees
+46,Terra Firma,Tree cover,0D570D,24m trees
+47,Terra Firma,Tree cover,095409,25m trees
+48,Terra Firma,Tree cover,065106,>25m trees
+100,Wetland,Salt pan,BFC0C0,3% short vegetation cover
+101,Wetland,Salt pan,B7BDC2,7% short vegetation cover
+102,Wetland,Sparse vegetation,AFBBC4,11% short vegetation cover
+103,Wetland,Sparse vegetation,A8B8C6,15% short vegetation cover
+104,Wetland,Sparse vegetation,A0B6C9,19% short vegetation cover
+105,Wetland,Sparse vegetation,99B3CB,23% short vegetation cover
+106,Wetland,Sparse vegetation,91B1CD,27% short vegetation cover
+107,Wetland,Sparse vegetation,89AFD0,31% short vegetation cover
+108,Wetland,Sparse vegetation,82ACD2,35% short vegetation cover
+109,Wetland,Sparse vegetation,7AAAD4,39% short vegetation cover
+110,Wetland,Sparse vegetation,73A7D6,43% short vegetation cover
+111,Wetland,Sparse vegetation,6BA5D9,47% short vegetation cover
+112,Wetland,Sparse vegetation,64A3DB,51% short vegetation cover
+113,Wetland,Sparse vegetation,5CA0DD,55% short vegetation cover
+114,Wetland,Sparse vegetation,549EE0,59% short vegetation cover
+115,Wetland,Sparse vegetation,4D9BE2,63% short vegetation cover
+116,Wetland,Sparse vegetation,4599E4,67% short vegetation cover
+117,Wetland,Sparse vegetation,3E96E6,71% short vegetation cover
+118,Wetland,Sparse vegetation,3694E9,75% short vegetation cover
+119,Wetland,Dense short vegetation,2E92EB,79% short vegetation cover
+120,Wetland,Dense short vegetation,278FED,83% short vegetation cover
+121,Wetland,Dense short vegetation,1F8DF0,87% short vegetation cover
+122,Wetland,Dense short vegetation,188AF2,91% short vegetation cover
+123,Wetland,Dense short vegetation,1088F4,95% short vegetation cover
+124,Wetland,Dense short vegetation,0986F7,100% short vegetation cover
+125,Wetland,Tree cover,55A5A5,3m trees
+126,Wetland,Tree cover,53A1A2,4m trees
+127,Wetland,Tree cover,519E9F,5m trees
+128,Wetland,Tree cover,4F9B9C,6m trees
+129,Wetland,Tree cover,4D989A,7m trees
+130,Wetland,Tree cover,4B9597,8m trees
+131,Wetland,Tree cover,499294,9m trees
+132,Wetland,Tree cover,478F91,10m trees
+133,Wetland,Tree cover,458B8F,11m trees
+134,Wetland,Tree cover,43888C,12m trees
+135,Wetland,Tree cover,418589,13m trees
+136,Wetland,Tree cover,3F8286,14m trees
+137,Wetland,Tree cover,3D7F84,15m trees
+138,Wetland,Tree cover,3B7C81,16m trees
+139,Wetland,Tree cover,39797E,17m trees
+140,Wetland,Tree cover,37767B,18m trees
+141,Wetland,Tree cover,357279,19m trees
+142,Wetland,Tree cover,336F76,20m trees
+143,Wetland,Tree cover,316C73,21m trees
+144,Wetland,Tree cover,2F6970,22m trees
+145,Wetland,Tree cover,2D666E,23m trees
+146,Wetland,Tree cover,2B636B,24m trees
+147,Wetland,Tree cover,296068,25m trees
+148,Wetland,Tree cover,285D66,>25m trees
+200,Open surface water,Open surface water,1964EB,20-29% of year
+201,Open surface water,Open surface water,1555E4,30-39% of year
+202,Open surface water,Open surface water,1147DD,40-49% of year
+203,Open surface water,Open surface water,0E39D6,50-59% of year
+204,Open surface water,Open surface water,0A2ACF,60-69% of year
+205,Open surface water,Open surface water,071CC8,70-79% of year
+206,Open surface water,Open surface water,030EC1,80-89% of year
+207,Open surface water,Open surface water,0000BA,90-100% of year
+241,Snow/ice,Snow/ice,ffffff,
+244,Cropland,Cropland,ff7d00,
+250,Built-up,Built-up,64dcdc,
+254,Ocean,Ocean,111133,
+255,No data,No data,,

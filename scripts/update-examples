@@ -3,19 +3,36 @@
 import shutil
 from pathlib import Path
 
-import stactools.ephemeral.stac
 from pystac import CatalogType
+
+import stactools.glad_glclu2020.stac
+from stactools.glad_glclu2020.metadata import CollectionIDs
 
 root = Path(__file__).parents[1]
 examples = root / "examples"
 
-collection = stactools.ephemeral.stac.create_collection()
-item = stactools.ephemeral.stac.create_item(str(root / "tests" / "data" / "asset.tif"))
-collection.add_item(item)
-collection.update_extent_from_items()
-collection.normalize_hrefs(str(examples))
-collection.make_all_asset_hrefs_relative()
 if examples.exists():
     shutil.rmtree(examples)
     examples.mkdir()
-collection.save(CatalogType.SELF_CONTAINED)
+
+for collection_id, sample_asset_href in [
+    (
+        CollectionIDs.GLAD_GLCLU2020,
+        "https://storage.googleapis.com/earthenginepartners-hansen/GLCLU2000-2020/v2/2000/40N_080W.tif",
+    ),
+    (
+        CollectionIDs.GLAD_GLCLU2020_CHANGE,
+        "https://storage.googleapis.com/earthenginepartners-hansen/GLCLU2000-2020/v2/2000-2020change/40N_080W.tif",
+    ),
+]:
+    dir = examples / collection_id
+    collection = stactools.glad_glclu2020.stac.create_collection(
+        id=collection_id,
+        sample_asset_href=sample_asset_href,
+    )
+    item = stactools.glad_glclu2020.stac.create_item(asset_href=sample_asset_href)
+    collection.add_item(item)
+    collection.update_extent_from_items()
+    collection.normalize_hrefs(str(dir))
+    collection.make_all_asset_hrefs_relative()
+    collection.save(CatalogType.SELF_CONTAINED)

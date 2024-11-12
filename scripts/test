@@ -24,7 +24,7 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
             *.py ./**/*.py \
             *.md
 
-        pytest --cov=stactools.ephemeral tests
+        pytest --cov=stactools.glad_glclu2020 tests
         coverage xml
     fi
 fi

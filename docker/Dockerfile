@@ -2,56 +2,56 @@ FROM continuumio/miniconda3 as base
 
 COPY environment.yml ./
 RUN conda update conda && \
-    conda env update -f environment.yml -n base && \
-    conda clean -af
+  conda env update -f environment.yml -n base && \
+  conda clean -af
 
 
 FROM base as dependencies
 
 ENV PATH="/opt/venv/bin:$PATH"
-WORKDIR /opt/stactools-ephemeral
+WORKDIR /opt/stactools-glad-glclu2020
 COPY --from=base /opt/conda /opt/conda
 COPY pyproject.toml ./
-COPY src/stactools/ephemeral/__init__.py src/stactools/ephemeral/
+COPY src/stactools/glad_glclu2020/__init__.py src/stactools/glad_glclu2020/
 RUN apt-get -y -q update \
-    && apt-get -y -q install build-essential \
-    && rm -rf /var/lib/apt/lists/
+  && apt-get -y -q install build-essential \
+  && rm -rf /var/lib/apt/lists/
 RUN python -m venv /opt/venv
 RUN pip install . \
-    && ls /opt/venv \
-    && rm -r /opt/venv/lib/python3.12/site-packages/stactools/ephemeral
+  && ls /opt/venv \
+  && rm -r /opt/venv/lib/python3.12/site-packages/stactools/glad_glclu2020
 
 
 FROM dependencies as builder
 
 ENV PATH="/opt/venv/bin:$PATH"
-WORKDIR /opt/stactools-ephemeral
+WORKDIR /opt/stactools-glad-glclu2020
 COPY --from=base /opt/conda /opt/conda
 COPY --from=dependencies /opt/venv /opt/venv
 COPY pyproject.toml ./
 COPY src ./src
 RUN pip install -U pip \
-    && pip install .
+  && pip install .
 WORKDIR /
-RUN rm -rf /opt/stactools-ephemeral
-CMD [ "stac", "ephemeralcmd" ]
+RUN rm -rf /opt/stactools-glad-glclu2020
+CMD [ "stac", "gladglclu2020" ]
 
 
 FROM dependencies as dev-dependencies
 
 ENV PATH="/opt/venv/bin:$PATH"
-WORKDIR /opt/stactools-ephemeral
+WORKDIR /opt/stactools-glad-glclu2020
 COPY --from=dependencies /opt/venv /opt/venv
 COPY pyproject.toml .
 RUN pip install -e '.[dev]' \
-    && git init
+  && git init
 
 
 FROM dev-dependencies as dev-builder
 
 ENV PATH="/opt/venv/bin:$PATH"
-WORKDIR /opt/stactools-ephemeral
+WORKDIR /opt/stactools-glad-glclu2020
 COPY --from=base /opt/conda /opt/conda
 COPY --from=dependencies /opt/venv /opt/venv
 COPY . .
-CMD [ "stac", "ephemeralcmd" ]
+CMD [ "stac", "gladglclu2020" ]

@@ -1,10 +1,10 @@
 [project]
-name = "stactools-ephemeral"
+name = "stactools-glad-glclu2020"
 version = "0.1.0"
-description = "PROVIDE DESCRIPTION HERE"
+description = "GLAD Land Use Land Cover 2020 stactools packages"
 readme = "README.md"
-authors = [{ name = "Your name here", email = "your-email@example.com" }]
-maintainers = [{ name = "Your name here", email = "your-email@example.com" }]
+authors = [{ name = "Henry Rodman", email = "henry@developmentseed.org" }]
+maintainers = [{ name = "Henry Rodman", email = "henry@developmentseed.org" }]
 keywords = ["stactools", "pystac", "catalog", "STAC"]
 license = { text = "Apache-2.0" }
 classifiers = [
@@ -13,34 +13,46 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License",
     "Natural Language :: English",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
-requires-python = ">=3.9"
-dependencies = ["stactools>=0.4.0"]
+requires-python = ">=3.10"
+dependencies = [
+    "parse>=1.20.2",
+    "pystac>=1.11.0",
+    "python-slugify>=8.0.4",
+    "rasterio>=1.4.2",
+    "rio-cogeo>=5.3.6",
+    "rio-stac>=0.10.0",
+    "stactools>=0.5.0",
+]
 
 [project.optional-dependencies]
 dev = [
     "black~=24.4",
     "codespell~=2.3",
+    "ipython>=8.29.0",
+    "jupyterlab>=4.3.0",
     "mypy~=1.10",
     "pre-commit~=4.0",
     "pytest-cov~=6.0",
     "pytest~=8.2",
     "requests~=2.32",
-    "ruff==0.7.2",
+    "ruff==0.7.3",
 ]
 docs = ["pystac~=1.10", "ipykernel~=6.29", "jinja2~=3.1"]
 
 [project.urls]
-Github = "https://github.com/stactools-packages/ephemeral"
-Issues = "https://github.com/stactools-packages/ephemeral/issues"
+Github = "https://github.com/stactools-packages/glad-glclu2020"
+Issues = "https://github.com/stactools-packages/glad-glclu2020/issues"
 
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+"stactools.glad_glclu2020.data" = ["*.csv"]
 
 [tool.isort]
 profile = "black"
@@ -54,3 +66,4 @@ mypy_path = "src"
 
 [tool.ruff]
 select = ["E", "F", "I"]
+

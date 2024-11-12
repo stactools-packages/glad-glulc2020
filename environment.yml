@@ -1,4 +1,4 @@
-name: stactools-ephemeral
+name: stactools-glad-glclu2020
 channels:
   - conda-forge
   - defaults

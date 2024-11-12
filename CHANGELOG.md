@@ -11,7 +11,7 @@ number as needed.
 
 ### Added
 
-- Nothing.
+- Initial implementation of STAC metadata structure
 
 ### Deprecated
 
@@ -25,4 +25,4 @@ number as needed.
 
 - Nothing.
 
-[Unreleased]: <https://github.com/stactools-packages/ephemeral/tree/main/>
+[Unreleased]: <https://github.com/stactools-packages/glad-glclu2020/tree/main/>
