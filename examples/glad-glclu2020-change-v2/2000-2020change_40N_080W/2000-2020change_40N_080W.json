@@ -5,7 +5,7 @@
     "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
   ],
-  "id": "v2_2000-2020change_40N_080W",
+  "id": "2000-2020change_40N_080W",
   "geometry": {
     "type": "Polygon",
     "coordinates": [

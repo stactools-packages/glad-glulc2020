@@ -28,7 +28,7 @@
     },
     {
       "rel": "item",
-      "href": "./v2_2000_40N_080W/v2_2000_40N_080W.json",
+      "href": "./2000_40N_080W/2000_40N_080W.json",
       "type": "application/json"
     }
   ],
@@ -3651,7 +3651,7 @@
   ],
   "providers": [
     {
-      "name": "University of Maryland Global Land Analysis & Discovery laboratory",
+      "name": "University of Maryland Global Land Analysis & Discovery laboratory (GLAD)",
       "roles": [
         "licensor",
         "host",
