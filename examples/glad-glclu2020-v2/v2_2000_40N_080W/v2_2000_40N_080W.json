@@ -1,0 +1,98 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "id": "v2_2000_40N_080W",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -80.0,
+          30.0
+        ],
+        [
+          -70.0,
+          30.0
+        ],
+        [
+          -70.0,
+          40.0
+        ],
+        [
+          -80.0,
+          40.0
+        ],
+        [
+          -80.0,
+          30.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -80.0,
+    30.0,
+    -70.0,
+    40.0
+  ],
+  "properties": {
+    "proj:epsg": 4326,
+    "proj:shape": [
+      40000,
+      40000
+    ],
+    "proj:transform": [
+      0.00025,
+      0.0,
+      -80.0,
+      0.0,
+      -0.00025,
+      40.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "datetime": "2000-01-01T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GLAD: Annual maps of land cover and land use"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GLAD: Annual maps of land cover and land use"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GLAD: Annual maps of land cover and land use"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://storage.googleapis.com/earthenginepartners-hansen/GLCLU2000-2020/v2/2000/40N_080W.tif",
+      "type": "image/tiff; application=geotiff",
+      "title": "Annual maps of land cover and land use",
+      "description": "Continuous measures of bare ground and tree height inside and outside of wetlands, seasonal water percent, and binary labels of built-up, permanent snow/ice, and cropland.",
+      "raster:bands": [
+        {
+          "data_type": "uint8",
+          "spatial_resolution": 30,
+          "scale": 1.0,
+          "offset": 0.0
+        }
+      ]
+    }
+  },
+  "collection": "glad-glclu2020-v2"
+}

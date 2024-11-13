@@ -98,9 +98,6 @@ def test_create_item(asset_href: str, year: str, media_type: MediaType) -> None:
 
 def test_bad_item_href_formats() -> None:
     """Test bad hrefs and href_formats"""
-    with pytest.raises(ValueError, match="missing required parameters: version"):
-        stac.create_item("test.tif", href_format="test/{ver}/{year}/{loc}.tif")
-
     with pytest.raises(ValueError, match="missing required parameters: year"):
         stac.create_item("test.tif", href_format="test/{version}/{yeer}/{loc}.tif")
 

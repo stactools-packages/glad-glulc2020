@@ -1,6 +1,6 @@
 {
   "type": "Collection",
-  "id": "glad-glclu2020",
+  "id": "glad-glclu2020-v2",
   "stac_version": "1.0.0",
   "description": "The GLAD Global Land Cover and Land Use Change dataset quantifies changes in forest extent and height, cropland, built-up lands, surface water, and perennial snow and ice extent from the year 2000 to 2020 at 30-m spatial resolution. The global dataset derived from the GLAD Landsat Analysis Ready Data. Each thematic product was independently derived using state-of-the-art, locally and regionally calibrated machine learning tools. Each thematic layer was validated independently using a statistical sampling. The global dataset is available online, with no charges for access and no restrictions on subsequent redistribution or use, as long as the proper citation is provided as specified by the Creative Commons Attribution License (CC BY). For all questions and comment contact Peter Potapov (potapov@umd.edu).\n\nP.V. Potapov, M.C. Hansen, A.H. Pickens, A. Hernandez-Serna, A. Tyukavina, S. Turubanova, V. Zalles, X. Li, A. Khan, F. Stolle, N. Harris, X.-P. Song, A. Baggett, I. Kommareddy, A. Komareddy (2022).",
   "links": [
@@ -33,6 +33,9 @@
     }
   ],
   "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
     "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
   ],
@@ -3645,6 +3648,17 @@
     "land use change",
     "vegetation",
     "surface water"
+  ],
+  "providers": [
+    {
+      "name": "University of Maryland Global Land Analysis & Discovery laboratory",
+      "roles": [
+        "licensor",
+        "host",
+        "producer"
+      ],
+      "url": "https://glad.umd.edu/dataset/GLCLUC2020"
+    }
   ],
   "assets": {
     "thumbnail": {

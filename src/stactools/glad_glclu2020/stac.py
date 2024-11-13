@@ -67,8 +67,8 @@ def create_item(asset_href: str, href_format: HrefFormat = DEFAULT_HREF_FORMAT) 
         href_format (str): The string format that can be used to parse the asset_href
 
     Details:
-        The href_format parameter is used to extract the version and the year from the
-        asset_href. href_format must include the parameters 'year' and 'version'.
+        The href_format parameter is used to extract the year from the
+        asset_href. href_format must include the parameter 'year'.
         Any other parameters that are included will be parsed and added to the item ID.
 
     Returns:

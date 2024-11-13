@@ -5,8 +5,6 @@ from enum import Enum
 from pathlib import Path
 from typing import Annotated, Any, Dict, List, Optional, Union
 
-import pystac.extensions.version as version_ext
-import rio_stac
 from parse import Parser, Result, parse
 from pystac import (
     Asset,
@@ -15,22 +13,27 @@ from pystac import (
     Item,
     Link,
     MediaType,
+    Provider,
+    ProviderRole,
     RelType,
     SpatialExtent,
     TemporalExtent,
 )
 from pystac.extensions.classification import (
-    AssetClassificationExtension,
     Classification,
     ItemAssetsClassificationExtension,
 )
 from pystac.extensions.item_assets import AssetDefinition, ItemAssetsExtension
+from pystac.extensions.projection import SCHEMA_URI as PROJ_EXT_URI
+from pystac.extensions.projection import ItemProjectionExtension
+from pystac.extensions.raster import SCHEMA_URI as RASTER_EXT_URI
+from pystac.extensions.raster import AssetRasterExtension, RasterBand
 from pystac.extensions.scientific import (
     CollectionScientificExtension,
     ScientificRelType,
 )
 from rio_cogeo.cogeo import cog_validate
-from rio_stac.stac import get_media_type, rasterio
+from rio_stac.stac import bbox_to_geom, get_media_type, rasterio
 from slugify import slugify
 
 DATA_DIR = Path(__file__).parent / "data"
@@ -38,7 +41,7 @@ DATA_DIR = Path(__file__).parent / "data"
 COLLECTION_START_DATETIME = datetime(2000, 1, 1, tzinfo=timezone.utc)
 COLLECTION_END_DATETIME = datetime(2020, 12, 31, 23, 59, 59, tzinfo=timezone.utc)
 
-DEFAULT_HREF_FORMAT = "https://storage.googleapis.com/earthenginepartners-hansen/GLCLU2000-2020/{version}/{year}/{loc}.tif"
+DEFAULT_HREF_FORMAT = "https://storage.googleapis.com/earthenginepartners-hansen/GLCLU2000-2020/v2/{year}/{loc}.tif"
 
 COLLECTION_HOMEPAGE = "https://storage.googleapis.com/earthenginepartners-hansen/GLCLU2000-2020/v2/download.html"
 
@@ -72,10 +75,15 @@ COLLECTION_KEYWORDS = [
     "surface water",
 ]
 
+RESOLUTION_METERS = 30
+VERSION = "v2"
+
+RENDER_EXT_URI = "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+
 
 class CollectionIDs(str, Enum):
-    GLAD_GLCLU2020 = "glad-glclu2020"
-    GLAD_GLCLU2020_CHANGE = "glad-glclu2020-change"
+    GLAD_GLCLU2020 = f"glad-glclu2020-{VERSION}"
+    GLAD_GLCLU2020_CHANGE = f"glad-glclu2020-change-{VERSION}"
 
 
 BaseURL = Annotated[str, "Base URL for data assets"]
@@ -88,17 +96,17 @@ ASSET_NAME = "data"
 ASSET_ROLES = ["data"]
 
 
-def _get_media_type(sample_asset_href: str) -> MediaType:
+def _get_media_type(asset_href: str) -> MediaType:
     """Get media type for an asset href"""
-    valid_cog, _, _ = cog_validate(sample_asset_href, quiet=True)
+    valid_cog, _, _ = cog_validate(asset_href, quiet=True)
     if valid_cog:
         return MediaType.COG if valid_cog else MediaType.GEOTIFF
 
-    with rasterio.open(sample_asset_href) as src:
+    with rasterio.open(asset_href) as src:
         media_type: MediaType | None = get_media_type(src)
 
         if not media_type:
-            raise ValueError(f"could not identify media type for {sample_asset_href}")
+            raise ValueError(f"could not identify media type for {asset_href}")
 
         return media_type
 
@@ -113,6 +121,7 @@ class CollectionDefinition:
     classifications_file: Path
     asset_title: str
     asset_description: str
+    version: str = VERSION
 
     # Asset configuration
     href_format: Annotated[str, "String format for the asset hrefs"] = (
@@ -229,6 +238,18 @@ class CollectionDefinition:
             extra_fields={"renders": self.renders},
             keywords=COLLECTION_KEYWORDS,
             license="CC-BY-4.0",
+            providers=[
+                Provider(
+                    name="University of Maryland Global Land Analysis & Discovery "
+                    "laboratory (GLAD)",
+                    url="https://glad.umd.edu/dataset/GLCLUC2020",
+                    roles=[
+                        ProviderRole.LICENSOR,
+                        ProviderRole.HOST,
+                        ProviderRole.PRODUCER,
+                    ],
+                ),
+            ],
             assets={
                 "thumbnail": Asset(
                     href=(
@@ -239,6 +260,11 @@ class CollectionDefinition:
                     roles=["thumbnail"],
                 )
             },
+            stac_extensions=[
+                PROJ_EXT_URI,
+                RENDER_EXT_URI,
+                RASTER_EXT_URI,
+            ],
         )
 
         # add scientific citation extension
@@ -286,14 +312,14 @@ class CollectionDefinition:
             if not isinstance(year_parsed, Result):
                 return None
 
-            collection_id = CollectionIDs.GLAD_GLCLU2020_CHANGE
+            collection_id = CollectionIDs.GLAD_GLCLU2020_CHANGE.value
             datetime_properties = {
                 "start_datetime": datetime(
                     year=int(year_parsed.named["start_year"]),
                     month=1,
                     day=1,
                     tzinfo=timezone.utc,
-                ).isoformat(),
+                ),
                 "end_datetime": datetime(
                     year=int(year_parsed.named["end_year"]),
                     month=12,
@@ -302,7 +328,7 @@ class CollectionDefinition:
                     minute=59,
                     second=59,
                     tzinfo=timezone.utc,
-                ).isoformat(),
+                ),
                 "datetime": datetime(
                     year=int(
                         year_parsed.named["end_year"],
@@ -316,7 +342,7 @@ class CollectionDefinition:
             if not isinstance(year_parsed, Result):
                 return None
 
-            collection_id = CollectionIDs.GLAD_GLCLU2020
+            collection_id = CollectionIDs.GLAD_GLCLU2020.value
             datetime_properties = {
                 "datetime": datetime(
                     year=int(year_parsed.named["year"]),
@@ -335,7 +361,6 @@ class CollectionDefinition:
 
         return {
             "id": "_".join(parsed.named.values()),
-            "version": parsed.named["version"],
             "collection": collection_id,
             **datetime_properties,
         }
@@ -347,26 +372,59 @@ class CollectionDefinition:
             raise ValueError(f"Unable to parse href: {asset_href}")
 
         id = href_parsed.pop("id")
-        item_datetime = href_parsed.pop("datetime")
         collection = href_parsed.pop("collection")
+        media_type = _get_media_type(asset_href)
+        with rasterio.open(asset_href) as src:
+            data_asset = Asset(
+                href=asset_href,
+                title=self.asset_title,
+                description=self.asset_description,
+                media_type=media_type,
+            )
 
-        item: Item = rio_stac.create_stac_item(
-            source=asset_href,
-            id=id,
-            collection=collection,
-            input_datetime=item_datetime,
-            properties=href_parsed,
-            asset_name=ASSET_NAME,
-            asset_roles=ASSET_ROLES,
-            asset_media_type=_get_media_type(asset_href),
-            extensions=[version_ext.SCHEMA_URI],
-            with_raster=False,
-            with_proj=True,
-        )
+            geometry = bbox_to_geom(src.bounds)
 
-        classification_extension = AssetClassificationExtension(item.assets[ASSET_NAME])
-        classification_extension.classes = self.classifications
+            item = Item(
+                id=id,
+                collection=collection,
+                geometry=geometry,
+                bbox=src.bounds,
+                datetime=href_parsed.get("datetime"),
+                start_datetime=href_parsed.get("start_datetime"),
+                end_datetime=href_parsed.get("end_datetime"),
+                properties={},
+                assets={ASSET_NAME: data_asset},
+            )
 
+            #
+            item.add_link(
+                Link(
+                    RelType.COLLECTION,
+                    collection,
+                    media_type=MediaType.JSON,
+                )
+            )
+
+            proj_ext = ItemProjectionExtension.ext(item, add_if_missing=True)
+            proj_ext.apply(
+                epsg=src.crs.to_epsg(),
+                transform=src.transform,
+                shape=src.shape,
+            )
+
+            raster_ext = AssetRasterExtension.ext(
+                item.assets[ASSET_NAME], add_if_missing=True
+            )
+            raster_ext.bands = [
+                RasterBand.create(
+                    nodata=src.nodata,
+                    data_type=src.dtypes[i],
+                    scale=src.scales[i],
+                    offset=src.offsets[i],
+                    spatial_resolution=RESOLUTION_METERS,
+                )
+                for i in range(src.count)
+            ]
         return item
 
 
@@ -383,7 +441,7 @@ def validate_href_format(href_format: str) -> str:
     Raises:
         ValueError: If the format string is invalid or missing required parameters
     """
-    required_params = {"version", "year"}
+    required_params = {"year"}
 
     # Try to create a Parser object - this validates the format string syntax
     try:
