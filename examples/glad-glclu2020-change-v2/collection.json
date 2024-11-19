@@ -2667,8 +2667,8 @@
   "assets": {
     "thumbnail": {
       "href": "https://glad.umd.edu/sites/default/files/styles/projects/public/datasets_glulc.jpg?itok=bxS-HPMi",
-      "type": "image/png",
-      "title": "GLAD: Net change of land cover and land use between 2000 and 2020",
+      "type": "image/jpeg",
+      "title": "Thumbnail",
       "roles": [
         "thumbnail"
       ]
