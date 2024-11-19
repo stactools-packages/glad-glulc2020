@@ -117,3 +117,20 @@ def test_create_item(
     item = Item.from_file(path)
     assert item.assets[ASSET_NAME].media_type == media_type
     item.validate()
+
+
+def test_create_collection_no_media_type_or_sample(tmp_path: Path) -> None:
+    """Test warning if no media_type or sample_asset_href provided"""
+    path = str(tmp_path / "collection.json")
+    runner = CliRunner()
+    with pytest.warns(UserWarning, match="No sample_asset_href or media_type provided"):
+        result = runner.invoke(
+            command,
+            [
+                "create-collection",
+                "--type",
+                "annual",
+                path,
+            ],
+        )
+    assert result.exit_code == 0, "\n{}".format(result.output)

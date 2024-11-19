@@ -40,6 +40,7 @@ DATA_DIR = Path(__file__).parent / "data"
 
 COLLECTION_START_DATETIME = datetime(2000, 1, 1, tzinfo=timezone.utc)
 COLLECTION_END_DATETIME = datetime(2020, 12, 31, 23, 59, 59, tzinfo=timezone.utc)
+COLLECTION_BBOX = (-180.0, -60.0, 180.0, 80.0)
 
 DEFAULT_HREF_FORMAT = "https://storage.googleapis.com/earthenginepartners-hansen/GLCLU2000-2020/v2/{year}/{loc}.tif"
 
@@ -225,7 +226,7 @@ class CollectionDefinition:
             title=self.title,
             description=self.description,
             extent=Extent(
-                SpatialExtent([[-180.0, 80.0, 180.0, -80.0]]),
+                SpatialExtent([list(COLLECTION_BBOX)]),
                 TemporalExtent(
                     [
                         [
@@ -255,8 +256,8 @@ class CollectionDefinition:
                     href=(
                         "https://glad.umd.edu/sites/default/files/styles/projects/public/datasets_glulc.jpg?itok=bxS-HPMi"
                     ),
-                    media_type=MediaType.PNG,
-                    title=self.title,
+                    media_type=MediaType.JPEG,
+                    title="Thumbnail",
                     roles=["thumbnail"],
                 )
             },
@@ -282,13 +283,13 @@ class CollectionDefinition:
             Link(
                 rel=RelType.LICENSE,
                 target="https://creativecommons.org/licenses/by/4.0/",
-                media_type="text/html",
+                media_type=MediaType.HTML,
                 title="CC-BY-4.0 license",
             ),
             Link(
                 rel="documentation",
                 target=COLLECTION_HOMEPAGE,
-                media_type="text/html",
+                media_type=MediaType.HTML,
                 title="GLAD GLCLU Access Page",
             ),
             Link(

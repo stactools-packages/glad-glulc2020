@@ -1,4 +1,5 @@
 import logging
+import warnings
 from typing import Optional
 
 import click
@@ -70,6 +71,15 @@ def create_gladglclu2020_command(cli: Group) -> Command:
             if collection_type == "annual"
             else CollectionIDs.GLAD_GLCLU2020_CHANGE
         )
+
+        if not (sample_asset_href or media_type):
+            warnings.warn(
+                "No sample_asset_href or media_type provided. "
+                f"Defaulting to {MediaType.GEOTIFF} media type.",
+                category=UserWarning,
+            )
+            media_type = MediaType.GEOTIFF.value
+
         media_type_enum = MediaType(media_type) if media_type else None
 
         collection = stac.create_collection(
