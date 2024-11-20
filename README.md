@@ -16,16 +16,16 @@
   - [classification](https://github.com/stac-extensions/classification/)
   - [render](https://github.com/stac-extensions/render/)
 - Browse the example in human-readable form
-  - [`glad-glclu2020`](https://radiantearth.github.io/stac-browser/#/external/raw.githubusercontent.com/stactools-packages/glad-glclu2020/main/examples/glad-glclu2020/collection.json)
-  - [`glad-glclu2020-change`](https://radiantearth.github.io/stac-browser/#/external/raw.githubusercontent.com/stactools-packages/glad-glclu2020/main/examples/glad-glclu2020-change/collection.json)
+  - [`glad-glclu2020-v2`](https://radiantearth.github.io/stac-browser/#/external/raw.githubusercontent.com/stactools-packages/glad-glclu2020/main/examples/glad-glclu2020-v2/collection.json)
+  - [`glad-glclu2020-change-v2`](https://radiantearth.github.io/stac-browser/#/external/raw.githubusercontent.com/stactools-packages/glad-glclu2020/main/examples/glad-glclu2020-change-v2/collection.json)
 - [Browse a notebook demonstrating the example item and collection](https://github.com/stactools-packages/glad-glclu2020/tree/main/docs/example.ipynb)
 
 A short description of the package and its usage.
 
 ## STAC examples
 
-- [Collection](examples/glad-glclu2020/collection.json)
-- [Item](examples/glad-glclu2020/v2_2000_40N_080W/v2_2000_40N_080W.json)
+- [Collection](https://github.com/stactools-packages/glad-glclu2020/blob/main/examples/glad-glclu2020-v2/collection.json)
+- [Item](https://github.com/stactools-packages/glad-glclu2020/blob/main/examples/glad-glclu2020-v2/2000_40N_080W/2000_40N_080W.json)
 
 ## Installation
 

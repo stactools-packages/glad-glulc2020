@@ -1,6 +1,6 @@
 [project]
 name = "stactools-glad-glclu2020"
-version = "0.1.0"
+version = "0.1.1"
 description = "GLAD Land Use Land Cover 2020 stactools packages"
 readme = "README.md"
 authors = [{ name = "Henry Rodman", email = "henry@developmentseed.org" }]
