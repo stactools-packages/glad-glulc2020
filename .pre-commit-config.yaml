@@ -19,7 +19,8 @@ repos:
         additional_dependencies:
           - click != 8.1.0
           - stactools
+          - python-slugify
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.5.2
+    rev: v0.7.3
     hooks:
       - id: ruff

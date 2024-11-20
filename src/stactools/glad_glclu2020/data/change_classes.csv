@@ -1,0 +1,215 @@
+value,general_class,class,sub_class,color_hint
+0,Terra Firma,True desert,3% short vegetation cover,FEFECC
+1,Terra Firma,True desert,7% short vegetation cover,FAFAC3
+2,Terra Firma,Semi-arid,11% short vegetation cover,F7F7BB
+3,Terra Firma,Semi-arid,15% short vegetation cover,F4F4B3
+4,Terra Firma,Semi-arid,19% short vegetation cover,F1F1AB
+5,Terra Firma,Semi-arid,23% short vegetation cover,EDEDA2
+6,Terra Firma,Semi-arid,27% short vegetation cover,EAEA9A
+7,Terra Firma,Semi-arid,31% short vegetation cover,E7E792
+8,Terra Firma,Semi-arid,35% short vegetation cover,E4E48A
+9,Terra Firma,Semi-arid,39% short vegetation cover,E0E081
+10,Terra Firma,Semi-arid,43% short vegetation cover,DDDD79
+11,Terra Firma,Semi-arid,47% short vegetation cover,DADA71
+12,Terra Firma,Semi-arid,51% short vegetation cover,D7D769
+13,Terra Firma,Semi-arid,55% short vegetation cover,D3D360
+14,Terra Firma,Semi-arid,59% short vegetation cover,D0D058
+15,Terra Firma,Semi-arid,63% short vegetation cover,CDCD50
+16,Terra Firma,Semi-arid,67% short vegetation cover,CACA48
+17,Terra Firma,Semi-arid,71% short vegetation cover,C6C63F
+18,Terra Firma,Semi-arid,75% short vegetation cover,C3C337
+19,Terra Firma,Dense short vegetation,79% short vegetation cover,C0C02F
+20,Terra Firma,Dense short vegetation,83% short vegetation cover,BDBD27
+21,Terra Firma,Dense short vegetation,87% short vegetation cover,B9B91E
+22,Terra Firma,Dense short vegetation,91% short vegetation cover,B6B616
+23,Terra Firma,Dense short vegetation,95% short vegetation cover,B3B30E
+24,Terra Firma,Dense short vegetation,100% short vegetation cover,B0B006
+25,Terra Firma,Stable tree cover,3m trees,609C60
+26,Terra Firma,Stable tree cover,4m trees,5C985C
+27,Terra Firma,Stable tree cover,5m trees,589558
+28,Terra Firma,Stable tree cover,6m trees,549254
+29,Terra Firma,Stable tree cover,7m trees,508E50
+30,Terra Firma,Stable tree cover,8m trees,4C8B4C
+31,Terra Firma,Stable tree cover,9m trees,488848
+32,Terra Firma,Stable tree cover,10m trees,448544
+33,Terra Firma,Stable tree cover,11m trees,408140
+34,Terra Firma,Stable tree cover,12m trees,3C7E3C
+35,Terra Firma,Stable tree cover,13m trees,387B38
+36,Terra Firma,Stable tree cover,14m trees,347834
+37,Terra Firma,Stable tree cover,15m trees,317431
+38,Terra Firma,Stable tree cover,16m trees,2D712D
+39,Terra Firma,Stable tree cover,17m trees,296E29
+40,Terra Firma,Stable tree cover,18m trees,256B25
+41,Terra Firma,Stable tree cover,19m trees,216721
+42,Terra Firma,Stable tree cover,20m trees,1D641D
+43,Terra Firma,Stable tree cover,21m trees,196119
+44,Terra Firma,Stable tree cover,22m trees,155E15
+45,Terra Firma,Stable tree cover,23m trees,115A11
+46,Terra Firma,Stable tree cover,24m trees,0D570D
+47,Terra Firma,Stable tree cover,25m trees,095409
+48,Terra Firma,Stable tree cover,>25m trees,065106
+49,Terra Firma,Tree cover with previous disturbance (2020 height),3m trees,643700
+50,Terra Firma,Tree cover with previous disturbance (2020 height),4m trees,643a00
+51,Terra Firma,Tree cover with previous disturbance (2020 height),5m trees,643d00
+52,Terra Firma,Tree cover with previous disturbance (2020 height),6m trees,644000
+53,Terra Firma,Tree cover with previous disturbance (2020 height),7m trees,644300
+54,Terra Firma,Tree cover with previous disturbance (2020 height),8m trees,644600
+55,Terra Firma,Tree cover with previous disturbance (2020 height),9m trees,644900
+56,Terra Firma,Tree cover with previous disturbance (2020 height),10m trees,654c00
+57,Terra Firma,Tree cover with previous disturbance (2020 height),11m trees,654f00
+58,Terra Firma,Tree cover with previous disturbance (2020 height),12m trees,655200
+59,Terra Firma,Tree cover with previous disturbance (2020 height),13m trees,655500
+60,Terra Firma,Tree cover with previous disturbance (2020 height),14m trees,655800
+61,Terra Firma,Tree cover with previous disturbance (2020 height),15m trees,655a00
+62,Terra Firma,Tree cover with previous disturbance (2020 height),16m trees,655d00
+63,Terra Firma,Tree cover with previous disturbance (2020 height),17m trees,656000
+64,Terra Firma,Tree cover with previous disturbance (2020 height),18m trees,656300
+65,Terra Firma,Tree cover with previous disturbance (2020 height),19m trees,666600
+66,Terra Firma,Tree cover with previous disturbance (2020 height),20m trees,666900
+67,Terra Firma,Tree cover with previous disturbance (2020 height),21m trees,666c00
+68,Terra Firma,Tree cover with previous disturbance (2020 height),22m trees,666f00
+69,Terra Firma,Tree cover with previous disturbance (2020 height),23m trees,667200
+70,Terra Firma,Tree cover with previous disturbance (2020 height),24m trees,667500
+71,Terra Firma,Tree cover with previous disturbance (2020 height),25m trees,667800
+72,Terra Firma,Tree cover with previous disturbance (2020 height),>25m trees,667b00
+73,Terra Firma,Tree height gain (2020 height),3m trees,ff99ff
+74,Terra Firma,Tree height gain (2020 height),4m trees,FC92FC
+75,Terra Firma,Tree height gain (2020 height),5m trees,F98BF9
+76,Terra Firma,Tree height gain (2020 height),6m trees,F685F6
+77,Terra Firma,Tree height gain (2020 height),7m trees,F37EF3
+78,Terra Firma,Tree height gain (2020 height),8m trees,F077F0
+79,Terra Firma,Tree height gain (2020 height),9m trees,ED71ED
+80,Terra Firma,Tree height gain (2020 height),10m trees,EA6AEA
+81,Terra Firma,Tree height gain (2020 height),11m trees,E763E7
+82,Terra Firma,Tree height gain (2020 height),12m trees,E45DE4
+83,Terra Firma,Tree height gain (2020 height),13m trees,E156E1
+84,Terra Firma,Tree height gain (2020 height),14m trees,DE4FDE
+85,Terra Firma,Tree height gain (2020 height),15m trees,DB49DB
+86,Terra Firma,Tree height gain (2020 height),16m trees,D842D8
+87,Terra Firma,Tree height gain (2020 height),17m trees,D53BD5
+88,Terra Firma,Tree height gain (2020 height),18m trees,D235D2
+89,Terra Firma,Tree height gain (2020 height),19m trees,CF2ECF
+90,Terra Firma,Tree height gain (2020 height),20m trees,CC27CC
+91,Terra Firma,Tree height gain (2020 height),21m trees,C921C9
+92,Terra Firma,Tree height gain (2020 height),22m trees,C61AC6
+93,Terra Firma,Tree height gain (2020 height),23m trees,C313C3
+94,Terra Firma,Tree height gain (2020 height),24m trees,C00DC0
+95,Terra Firma,Tree height gain (2020 height),25m trees,BD06BD
+96,Terra Firma,Tree height gain (2020 height),>25m trees,bb00bb
+100,Wetland,Salt pan,3% short vegetation cover,BFC0C0
+101,Wetland,Salt pan,7% short vegetation cover,B7BDC2
+102,Wetland,Sparse vegetation,11% short vegetation cover,AFBBC4
+103,Wetland,Sparse vegetation,15% short vegetation cover,A8B8C6
+104,Wetland,Sparse vegetation,19% short vegetation cover,A0B6C9
+105,Wetland,Sparse vegetation,23% short vegetation cover,99B3CB
+106,Wetland,Sparse vegetation,27% short vegetation cover,91B1CD
+107,Wetland,Sparse vegetation,31% short vegetation cover,89AFD0
+108,Wetland,Sparse vegetation,35% short vegetation cover,82ACD2
+109,Wetland,Sparse vegetation,39% short vegetation cover,7AAAD4
+110,Wetland,Sparse vegetation,43% short vegetation cover,73A7D6
+111,Wetland,Sparse vegetation,47% short vegetation cover,6BA5D9
+112,Wetland,Sparse vegetation,51% short vegetation cover,64A3DB
+113,Wetland,Sparse vegetation,55% short vegetation cover,5CA0DD
+114,Wetland,Sparse vegetation,59% short vegetation cover,549EE0
+115,Wetland,Sparse vegetation,63% short vegetation cover,4D9BE2
+116,Wetland,Sparse vegetation,67% short vegetation cover,4599E4
+117,Wetland,Sparse vegetation,71% short vegetation cover,3E96E6
+118,Wetland,Sparse vegetation,75% short vegetation cover,3694E9
+119,Wetland,Dense short vegetation,79% short vegetation cover,2E92EB
+120,Wetland,Dense short vegetation,83% short vegetation cover,278FED
+121,Wetland,Dense short vegetation,87% short vegetation cover,1F8DF0
+122,Wetland,Dense short vegetation,91% short vegetation cover,188AF2
+123,Wetland,Dense short vegetation,95% short vegetation cover,1088F4
+124,Wetland,Dense short vegetation,100% short vegetation cover,0986F7
+125,Wetland,Stable tree cover,3m trees,55A5A5
+126,Wetland,Stable tree cover,4m trees,53A1A2
+127,Wetland,Stable tree cover,5m trees,519E9F
+128,Wetland,Stable tree cover,6m trees,4F9B9C
+129,Wetland,Stable tree cover,7m trees,4D989A
+130,Wetland,Stable tree cover,8m trees,4B9597
+131,Wetland,Stable tree cover,9m trees,499294
+132,Wetland,Stable tree cover,10m trees,478F91
+133,Wetland,Stable tree cover,11m trees,458B8F
+134,Wetland,Stable tree cover,12m trees,43888C
+135,Wetland,Stable tree cover,13m trees,418589
+136,Wetland,Stable tree cover,14m trees,3F8286
+137,Wetland,Stable tree cover,15m trees,3D7F84
+138,Wetland,Stable tree cover,16m trees,3B7C81
+139,Wetland,Stable tree cover,17m trees,39797E
+140,Wetland,Stable tree cover,18m trees,37767B
+141,Wetland,Stable tree cover,19m trees,357279
+142,Wetland,Stable tree cover,20m trees,336F76
+143,Wetland,Stable tree cover,21m trees,316C73
+144,Wetland,Stable tree cover,22m trees,2F6970
+145,Wetland,Stable tree cover,23m trees,2D666E
+146,Wetland,Stable tree cover,24m trees,2B636B
+147,Wetland,Stable tree cover,25m trees,296068
+148,Wetland,Stable tree cover,>25m trees,285D66
+149,Wetland,Tree cover with previous disturbance (2020 height),3m trees,bb93b0
+150,Wetland,Tree cover with previous disturbance (2020 height),4m trees,B78FAC
+151,Wetland,Tree cover with previous disturbance (2020 height),5m trees,B48CA9
+152,Wetland,Tree cover with previous disturbance (2020 height),6m trees,B189A6
+153,Wetland,Tree cover with previous disturbance (2020 height),7m trees,AE85A2
+154,Wetland,Tree cover with previous disturbance (2020 height),8m trees,AA829F
+155,Wetland,Tree cover with previous disturbance (2020 height),9m trees,A77F9C
+156,Wetland,Tree cover with previous disturbance (2020 height),10m trees,A47B99
+157,Wetland,Tree cover with previous disturbance (2020 height),11m trees,A17895
+158,Wetland,Tree cover with previous disturbance (2020 height),12m trees,9E7592
+159,Wetland,Tree cover with previous disturbance (2020 height),13m trees,9A718F
+160,Wetland,Tree cover with previous disturbance (2020 height),14m trees,976E8C
+161,Wetland,Tree cover with previous disturbance (2020 height),15m trees,946B88
+162,Wetland,Tree cover with previous disturbance (2020 height),16m trees,916885
+163,Wetland,Tree cover with previous disturbance (2020 height),17m trees,8D6482
+164,Wetland,Tree cover with previous disturbance (2020 height),18m trees,8A617F
+165,Wetland,Tree cover with previous disturbance (2020 height),19m trees,875E7B
+166,Wetland,Tree cover with previous disturbance (2020 height),20m trees,845A78
+167,Wetland,Tree cover with previous disturbance (2020 height),21m trees,815775
+168,Wetland,Tree cover with previous disturbance (2020 height),22m trees,7D5472
+169,Wetland,Tree cover with previous disturbance (2020 height),23m trees,7A506E
+170,Wetland,Tree cover with previous disturbance (2020 height),24m trees,774D6B
+171,Wetland,Tree cover with previous disturbance (2020 height),25m trees,744A68
+172,Wetland,Tree cover with previous disturbance (2020 height),>25m trees,714765
+173,Wetland,Tree height gain (2020 height),3m trees,de7cbb
+174,Wetland,Tree height gain (2020 height),4m trees,DA77B7
+175,Wetland,Tree height gain (2020 height),5m trees,D772B3
+176,Wetland,Tree height gain (2020 height),6m trees,D46EAF
+177,Wetland,Tree height gain (2020 height),7m trees,D169AB
+178,Wetland,Tree height gain (2020 height),8m trees,CE64A8
+179,Wetland,Tree height gain (2020 height),9m trees,CB60A4
+180,Wetland,Tree height gain (2020 height),10m trees,C85BA0
+181,Wetland,Tree height gain (2020 height),11m trees,C4579C
+182,Wetland,Tree height gain (2020 height),12m trees,C15298
+183,Wetland,Tree height gain (2020 height),13m trees,BE4D95
+184,Wetland,Tree height gain (2020 height),14m trees,BB4991
+185,Wetland,Tree height gain (2020 height),15m trees,B8448D
+186,Wetland,Tree height gain (2020 height),16m trees,B54089
+187,Wetland,Tree height gain (2020 height),17m trees,B23B86
+188,Wetland,Tree height gain (2020 height),18m trees,AF3682
+189,Wetland,Tree height gain (2020 height),19m trees,AB327E
+190,Wetland,Tree height gain (2020 height),20m trees,A82D7A
+191,Wetland,Tree height gain (2020 height),21m trees,A52976
+192,Wetland,Tree height gain (2020 height),22m trees,A22473
+193,Wetland,Tree height gain (2020 height),23m trees,9F1F6F
+194,Wetland,Tree height gain (2020 height),24m trees,9C1B6B
+195,Wetland,Tree height gain (2020 height),25m trees,991667
+196,Wetland,Tree height gain (2020 height),>25m trees,961264
+208,Open surface water,Open surface water,permanent water,0000BA
+209,Open surface water,Open surface water,persistent water loss,040464
+210,Open surface water,Open surface water,persistent water gain,0000FF
+211,Open surface water,Open surface water,variable water,3051cf
+240,Short vegetation,Short vegetation,short vegetation after tree loss,ff2828
+241,Snow/ice,Snow/ice,stable,ffffff
+242,Snow/ice,Snow/ice,snow/ice gain,d0ffff
+243,Snow/ice,Snow/ice,snow/ice loss,ffe0d0
+244,Cropland,Cropland,stable cropland,ff7d00
+245,Cropland,Cropland,cropland gain from trees,fac800
+246,Cropland,Cropland,cropland gain from wetland veg,c86400
+247,Cropland,Cropland,cropland gain from other,fff000
+248,Cropland loss,Cropland loss,cropland loss to tree,afcd96
+249,Cropland loss,Cropland loss,cropland loss to short veg/other,afcd96
+250,Built-up,Built-up,stable built-up,64dcdc
+251,Built-up,Built-up,built-up gain from trees,00ffff
+252,Built-up,Built-up,built-up gain from crop,00ffff
+253,Built-up,Built-up,built-up from other,00ffff
+254,Ocean,Ocean,,111133
+255,No data,,,

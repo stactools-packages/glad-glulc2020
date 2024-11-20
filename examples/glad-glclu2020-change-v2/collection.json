@@ -1,0 +1,2677 @@
+{
+  "type": "Collection",
+  "id": "glad-glclu2020-change-v2",
+  "stac_version": "1.0.0",
+  "description": "The GLAD Global Land Cover and Land Use Change dataset quantifies changes in forest extent and height, cropland, built-up lands, surface water, and perennial snow and ice extent from the year 2000 to 2020 at 30-m spatial resolution. The global dataset derived from the GLAD Landsat Analysis Ready Data. Each thematic product was independently derived using state-of-the-art, locally and regionally calibrated machine learning tools. Each thematic layer was validated independently using a statistical sampling. The global dataset is available online, with no charges for access and no restrictions on subsequent redistribution or use, as long as the proper citation is provided as specified by the Creative Commons Attribution License (CC BY). For all questions and comment contact Peter Potapov (potapov@umd.edu).\n\nP.V. Potapov, M.C. Hansen, A.H. Pickens, A. Hernandez-Serna, A. Tyukavina, S. Turubanova, V. Zalles, X. Li, A. Khan, F. Stolle, N. Harris, X.-P. Song, A. Baggett, I. Kommareddy, A. Komareddy (2022).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./collection.json",
+      "type": "application/json",
+      "title": "GLAD: Net change of land cover and land use between 2000 and 2020"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "type": "text/html",
+      "title": "CC-BY-4.0 license"
+    },
+    {
+      "rel": "documentation",
+      "href": "https://storage.googleapis.com/earthenginepartners-hansen/GLCLU2000-2020/v2/download.html",
+      "type": "text/html",
+      "title": "GLAD GLCLU Access Page"
+    },
+    {
+      "rel": "cite-as",
+      "href": "https://doi.org/10.3389/frsen.2022.856903"
+    },
+    {
+      "rel": "item",
+      "href": "./2000-2020change_40N_080W/2000-2020change_40N_080W.json",
+      "type": "application/json"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "renders": {
+    "2000-2020 change": {
+      "assets": [
+        "data"
+      ],
+      "datetime": "2000-01-01T00:00:00Z/2020-12-31T23:59:59Z",
+      "colormap": {
+        "0": [
+          254,
+          254,
+          204
+        ],
+        "1": [
+          250,
+          250,
+          195
+        ],
+        "2": [
+          247,
+          247,
+          187
+        ],
+        "3": [
+          244,
+          244,
+          179
+        ],
+        "4": [
+          241,
+          241,
+          171
+        ],
+        "5": [
+          237,
+          237,
+          162
+        ],
+        "6": [
+          234,
+          234,
+          154
+        ],
+        "7": [
+          231,
+          231,
+          146
+        ],
+        "8": [
+          228,
+          228,
+          138
+        ],
+        "9": [
+          224,
+          224,
+          129
+        ],
+        "10": [
+          221,
+          221,
+          121
+        ],
+        "11": [
+          218,
+          218,
+          113
+        ],
+        "12": [
+          215,
+          215,
+          105
+        ],
+        "13": [
+          211,
+          211,
+          96
+        ],
+        "14": [
+          208,
+          208,
+          88
+        ],
+        "15": [
+          205,
+          205,
+          80
+        ],
+        "16": [
+          202,
+          202,
+          72
+        ],
+        "17": [
+          198,
+          198,
+          63
+        ],
+        "18": [
+          195,
+          195,
+          55
+        ],
+        "19": [
+          192,
+          192,
+          47
+        ],
+        "20": [
+          189,
+          189,
+          39
+        ],
+        "21": [
+          185,
+          185,
+          30
+        ],
+        "22": [
+          182,
+          182,
+          22
+        ],
+        "23": [
+          179,
+          179,
+          14
+        ],
+        "24": [
+          176,
+          176,
+          6
+        ],
+        "25": [
+          96,
+          156,
+          96
+        ],
+        "26": [
+          92,
+          152,
+          92
+        ],
+        "27": [
+          88,
+          149,
+          88
+        ],
+        "28": [
+          84,
+          146,
+          84
+        ],
+        "29": [
+          80,
+          142,
+          80
+        ],
+        "30": [
+          76,
+          139,
+          76
+        ],
+        "31": [
+          72,
+          136,
+          72
+        ],
+        "32": [
+          68,
+          133,
+          68
+        ],
+        "33": [
+          64,
+          129,
+          64
+        ],
+        "34": [
+          60,
+          126,
+          60
+        ],
+        "35": [
+          56,
+          123,
+          56
+        ],
+        "36": [
+          52,
+          120,
+          52
+        ],
+        "37": [
+          49,
+          116,
+          49
+        ],
+        "38": [
+          45,
+          113,
+          45
+        ],
+        "39": [
+          41,
+          110,
+          41
+        ],
+        "40": [
+          37,
+          107,
+          37
+        ],
+        "41": [
+          33,
+          103,
+          33
+        ],
+        "42": [
+          29,
+          100,
+          29
+        ],
+        "43": [
+          25,
+          97,
+          25
+        ],
+        "44": [
+          21,
+          94,
+          21
+        ],
+        "45": [
+          17,
+          90,
+          17
+        ],
+        "46": [
+          13,
+          87,
+          13
+        ],
+        "47": [
+          9,
+          84,
+          9
+        ],
+        "48": [
+          6,
+          81,
+          6
+        ],
+        "49": [
+          100,
+          55,
+          0
+        ],
+        "50": [
+          100,
+          58,
+          0
+        ],
+        "51": [
+          100,
+          61,
+          0
+        ],
+        "52": [
+          100,
+          64,
+          0
+        ],
+        "53": [
+          100,
+          67,
+          0
+        ],
+        "54": [
+          100,
+          70,
+          0
+        ],
+        "55": [
+          100,
+          73,
+          0
+        ],
+        "56": [
+          101,
+          76,
+          0
+        ],
+        "57": [
+          101,
+          79,
+          0
+        ],
+        "58": [
+          101,
+          82,
+          0
+        ],
+        "59": [
+          101,
+          85,
+          0
+        ],
+        "60": [
+          101,
+          88,
+          0
+        ],
+        "61": [
+          101,
+          90,
+          0
+        ],
+        "62": [
+          101,
+          93,
+          0
+        ],
+        "63": [
+          101,
+          96,
+          0
+        ],
+        "64": [
+          101,
+          99,
+          0
+        ],
+        "65": [
+          102,
+          102,
+          0
+        ],
+        "66": [
+          102,
+          105,
+          0
+        ],
+        "67": [
+          102,
+          108,
+          0
+        ],
+        "68": [
+          102,
+          111,
+          0
+        ],
+        "69": [
+          102,
+          114,
+          0
+        ],
+        "70": [
+          102,
+          117,
+          0
+        ],
+        "71": [
+          102,
+          120,
+          0
+        ],
+        "72": [
+          102,
+          123,
+          0
+        ],
+        "73": [
+          255,
+          153,
+          255
+        ],
+        "74": [
+          252,
+          146,
+          252
+        ],
+        "75": [
+          249,
+          139,
+          249
+        ],
+        "76": [
+          246,
+          133,
+          246
+        ],
+        "77": [
+          243,
+          126,
+          243
+        ],
+        "78": [
+          240,
+          119,
+          240
+        ],
+        "79": [
+          237,
+          113,
+          237
+        ],
+        "80": [
+          234,
+          106,
+          234
+        ],
+        "81": [
+          231,
+          99,
+          231
+        ],
+        "82": [
+          228,
+          93,
+          228
+        ],
+        "83": [
+          225,
+          86,
+          225
+        ],
+        "84": [
+          222,
+          79,
+          222
+        ],
+        "85": [
+          219,
+          73,
+          219
+        ],
+        "86": [
+          216,
+          66,
+          216
+        ],
+        "87": [
+          213,
+          59,
+          213
+        ],
+        "88": [
+          210,
+          53,
+          210
+        ],
+        "89": [
+          207,
+          46,
+          207
+        ],
+        "90": [
+          204,
+          39,
+          204
+        ],
+        "91": [
+          201,
+          33,
+          201
+        ],
+        "92": [
+          198,
+          26,
+          198
+        ],
+        "93": [
+          195,
+          19,
+          195
+        ],
+        "94": [
+          192,
+          13,
+          192
+        ],
+        "95": [
+          189,
+          6,
+          189
+        ],
+        "96": [
+          187,
+          0,
+          187
+        ],
+        "100": [
+          191,
+          192,
+          192
+        ],
+        "101": [
+          183,
+          189,
+          194
+        ],
+        "102": [
+          175,
+          187,
+          196
+        ],
+        "103": [
+          168,
+          184,
+          198
+        ],
+        "104": [
+          160,
+          182,
+          201
+        ],
+        "105": [
+          153,
+          179,
+          203
+        ],
+        "106": [
+          145,
+          177,
+          205
+        ],
+        "107": [
+          137,
+          175,
+          208
+        ],
+        "108": [
+          130,
+          172,
+          210
+        ],
+        "109": [
+          122,
+          170,
+          212
+        ],
+        "110": [
+          115,
+          167,
+          214
+        ],
+        "111": [
+          107,
+          165,
+          217
+        ],
+        "112": [
+          100,
+          163,
+          219
+        ],
+        "113": [
+          92,
+          160,
+          221
+        ],
+        "114": [
+          84,
+          158,
+          224
+        ],
+        "115": [
+          77,
+          155,
+          226
+        ],
+        "116": [
+          69,
+          153,
+          228
+        ],
+        "117": [
+          62,
+          150,
+          230
+        ],
+        "118": [
+          54,
+          148,
+          233
+        ],
+        "119": [
+          46,
+          146,
+          235
+        ],
+        "120": [
+          39,
+          143,
+          237
+        ],
+        "121": [
+          31,
+          141,
+          240
+        ],
+        "122": [
+          24,
+          138,
+          242
+        ],
+        "123": [
+          16,
+          136,
+          244
+        ],
+        "124": [
+          9,
+          134,
+          247
+        ],
+        "125": [
+          85,
+          165,
+          165
+        ],
+        "126": [
+          83,
+          161,
+          162
+        ],
+        "127": [
+          81,
+          158,
+          159
+        ],
+        "128": [
+          79,
+          155,
+          156
+        ],
+        "129": [
+          77,
+          152,
+          154
+        ],
+        "130": [
+          75,
+          149,
+          151
+        ],
+        "131": [
+          73,
+          146,
+          148
+        ],
+        "132": [
+          71,
+          143,
+          145
+        ],
+        "133": [
+          69,
+          139,
+          143
+        ],
+        "134": [
+          67,
+          136,
+          140
+        ],
+        "135": [
+          65,
+          133,
+          137
+        ],
+        "136": [
+          63,
+          130,
+          134
+        ],
+        "137": [
+          61,
+          127,
+          132
+        ],
+        "138": [
+          59,
+          124,
+          129
+        ],
+        "139": [
+          57,
+          121,
+          126
+        ],
+        "140": [
+          55,
+          118,
+          123
+        ],
+        "141": [
+          53,
+          114,
+          121
+        ],
+        "142": [
+          51,
+          111,
+          118
+        ],
+        "143": [
+          49,
+          108,
+          115
+        ],
+        "144": [
+          47,
+          105,
+          112
+        ],
+        "145": [
+          45,
+          102,
+          110
+        ],
+        "146": [
+          43,
+          99,
+          107
+        ],
+        "147": [
+          41,
+          96,
+          104
+        ],
+        "148": [
+          40,
+          93,
+          102
+        ],
+        "149": [
+          187,
+          147,
+          176
+        ],
+        "150": [
+          183,
+          143,
+          172
+        ],
+        "151": [
+          180,
+          140,
+          169
+        ],
+        "152": [
+          177,
+          137,
+          166
+        ],
+        "153": [
+          174,
+          133,
+          162
+        ],
+        "154": [
+          170,
+          130,
+          159
+        ],
+        "155": [
+          167,
+          127,
+          156
+        ],
+        "156": [
+          164,
+          123,
+          153
+        ],
+        "157": [
+          161,
+          120,
+          149
+        ],
+        "158": [
+          158,
+          117,
+          146
+        ],
+        "159": [
+          154,
+          113,
+          143
+        ],
+        "160": [
+          151,
+          110,
+          140
+        ],
+        "161": [
+          148,
+          107,
+          136
+        ],
+        "162": [
+          145,
+          104,
+          133
+        ],
+        "163": [
+          141,
+          100,
+          130
+        ],
+        "164": [
+          138,
+          97,
+          127
+        ],
+        "165": [
+          135,
+          94,
+          123
+        ],
+        "166": [
+          132,
+          90,
+          120
+        ],
+        "167": [
+          129,
+          87,
+          117
+        ],
+        "168": [
+          125,
+          84,
+          114
+        ],
+        "169": [
+          122,
+          80,
+          110
+        ],
+        "170": [
+          119,
+          77,
+          107
+        ],
+        "171": [
+          116,
+          74,
+          104
+        ],
+        "172": [
+          113,
+          71,
+          101
+        ],
+        "173": [
+          222,
+          124,
+          187
+        ],
+        "174": [
+          218,
+          119,
+          183
+        ],
+        "175": [
+          215,
+          114,
+          179
+        ],
+        "176": [
+          212,
+          110,
+          175
+        ],
+        "177": [
+          209,
+          105,
+          171
+        ],
+        "178": [
+          206,
+          100,
+          168
+        ],
+        "179": [
+          203,
+          96,
+          164
+        ],
+        "180": [
+          200,
+          91,
+          160
+        ],
+        "181": [
+          196,
+          87,
+          156
+        ],
+        "182": [
+          193,
+          82,
+          152
+        ],
+        "183": [
+          190,
+          77,
+          149
+        ],
+        "184": [
+          187,
+          73,
+          145
+        ],
+        "185": [
+          184,
+          68,
+          141
+        ],
+        "186": [
+          181,
+          64,
+          137
+        ],
+        "187": [
+          178,
+          59,
+          134
+        ],
+        "188": [
+          175,
+          54,
+          130
+        ],
+        "189": [
+          171,
+          50,
+          126
+        ],
+        "190": [
+          168,
+          45,
+          122
+        ],
+        "191": [
+          165,
+          41,
+          118
+        ],
+        "192": [
+          162,
+          36,
+          115
+        ],
+        "193": [
+          159,
+          31,
+          111
+        ],
+        "194": [
+          156,
+          27,
+          107
+        ],
+        "195": [
+          153,
+          22,
+          103
+        ],
+        "196": [
+          150,
+          18,
+          100
+        ],
+        "208": [
+          0,
+          0,
+          186
+        ],
+        "209": [
+          4,
+          4,
+          100
+        ],
+        "210": [
+          0,
+          0,
+          255
+        ],
+        "211": [
+          48,
+          81,
+          207
+        ],
+        "240": [
+          255,
+          40,
+          40
+        ],
+        "241": [
+          255,
+          255,
+          255
+        ],
+        "242": [
+          208,
+          255,
+          255
+        ],
+        "243": [
+          255,
+          224,
+          208
+        ],
+        "244": [
+          255,
+          125,
+          0
+        ],
+        "245": [
+          250,
+          200,
+          0
+        ],
+        "246": [
+          200,
+          100,
+          0
+        ],
+        "247": [
+          255,
+          240,
+          0
+        ],
+        "248": [
+          175,
+          205,
+          150
+        ],
+        "249": [
+          175,
+          205,
+          150
+        ],
+        "250": [
+          100,
+          220,
+          220
+        ],
+        "251": [
+          0,
+          255,
+          255
+        ],
+        "252": [
+          0,
+          255,
+          255
+        ],
+        "253": [
+          0,
+          255,
+          255
+        ],
+        "254": [
+          17,
+          17,
+          51
+        ]
+      }
+    }
+  },
+  "sci:citation": "P.V. Potapov, M.C. Hansen, A.H. Pickens, A. Hernandez-Serna, A. Tyukavina, S. Turubanova, V. Zalles, X. Li, A. Khan, F. Stolle, N. Harris, X.-P. Song, A. Baggett, I. Kommareddy, A. Komareddy (2022).",
+  "item_assets": {
+    "data": {
+      "title": "Net change of land cover and land use between 2000 and 2020",
+      "description": "Land cover and land use states of 2020 with transitions relative to 2000 labeled.",
+      "roles": [
+        "data"
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "name": "terra-firma-true-desert-3-short-vegetation-cover",
+          "description": "True desert - 3% short vegetation cover",
+          "color_hint": "FEFECC",
+          "nodata": false
+        },
+        {
+          "value": 1,
+          "name": "terra-firma-true-desert-7-short-vegetation-cover",
+          "description": "True desert - 7% short vegetation cover",
+          "color_hint": "FAFAC3",
+          "nodata": false
+        },
+        {
+          "value": 2,
+          "name": "terra-firma-semi-arid-11-short-vegetation-cover",
+          "description": "Semi-arid - 11% short vegetation cover",
+          "color_hint": "F7F7BB",
+          "nodata": false
+        },
+        {
+          "value": 3,
+          "name": "terra-firma-semi-arid-15-short-vegetation-cover",
+          "description": "Semi-arid - 15% short vegetation cover",
+          "color_hint": "F4F4B3",
+          "nodata": false
+        },
+        {
+          "value": 4,
+          "name": "terra-firma-semi-arid-19-short-vegetation-cover",
+          "description": "Semi-arid - 19% short vegetation cover",
+          "color_hint": "F1F1AB",
+          "nodata": false
+        },
+        {
+          "value": 5,
+          "name": "terra-firma-semi-arid-23-short-vegetation-cover",
+          "description": "Semi-arid - 23% short vegetation cover",
+          "color_hint": "EDEDA2",
+          "nodata": false
+        },
+        {
+          "value": 6,
+          "name": "terra-firma-semi-arid-27-short-vegetation-cover",
+          "description": "Semi-arid - 27% short vegetation cover",
+          "color_hint": "EAEA9A",
+          "nodata": false
+        },
+        {
+          "value": 7,
+          "name": "terra-firma-semi-arid-31-short-vegetation-cover",
+          "description": "Semi-arid - 31% short vegetation cover",
+          "color_hint": "E7E792",
+          "nodata": false
+        },
+        {
+          "value": 8,
+          "name": "terra-firma-semi-arid-35-short-vegetation-cover",
+          "description": "Semi-arid - 35% short vegetation cover",
+          "color_hint": "E4E48A",
+          "nodata": false
+        },
+        {
+          "value": 9,
+          "name": "terra-firma-semi-arid-39-short-vegetation-cover",
+          "description": "Semi-arid - 39% short vegetation cover",
+          "color_hint": "E0E081",
+          "nodata": false
+        },
+        {
+          "value": 10,
+          "name": "terra-firma-semi-arid-43-short-vegetation-cover",
+          "description": "Semi-arid - 43% short vegetation cover",
+          "color_hint": "DDDD79",
+          "nodata": false
+        },
+        {
+          "value": 11,
+          "name": "terra-firma-semi-arid-47-short-vegetation-cover",
+          "description": "Semi-arid - 47% short vegetation cover",
+          "color_hint": "DADA71",
+          "nodata": false
+        },
+        {
+          "value": 12,
+          "name": "terra-firma-semi-arid-51-short-vegetation-cover",
+          "description": "Semi-arid - 51% short vegetation cover",
+          "color_hint": "D7D769",
+          "nodata": false
+        },
+        {
+          "value": 13,
+          "name": "terra-firma-semi-arid-55-short-vegetation-cover",
+          "description": "Semi-arid - 55% short vegetation cover",
+          "color_hint": "D3D360",
+          "nodata": false
+        },
+        {
+          "value": 14,
+          "name": "terra-firma-semi-arid-59-short-vegetation-cover",
+          "description": "Semi-arid - 59% short vegetation cover",
+          "color_hint": "D0D058",
+          "nodata": false
+        },
+        {
+          "value": 15,
+          "name": "terra-firma-semi-arid-63-short-vegetation-cover",
+          "description": "Semi-arid - 63% short vegetation cover",
+          "color_hint": "CDCD50",
+          "nodata": false
+        },
+        {
+          "value": 16,
+          "name": "terra-firma-semi-arid-67-short-vegetation-cover",
+          "description": "Semi-arid - 67% short vegetation cover",
+          "color_hint": "CACA48",
+          "nodata": false
+        },
+        {
+          "value": 17,
+          "name": "terra-firma-semi-arid-71-short-vegetation-cover",
+          "description": "Semi-arid - 71% short vegetation cover",
+          "color_hint": "C6C63F",
+          "nodata": false
+        },
+        {
+          "value": 18,
+          "name": "terra-firma-semi-arid-75-short-vegetation-cover",
+          "description": "Semi-arid - 75% short vegetation cover",
+          "color_hint": "C3C337",
+          "nodata": false
+        },
+        {
+          "value": 19,
+          "name": "terra-firma-dense-short-vegetation-79-short-vegetation-cover",
+          "description": "Dense short vegetation - 79% short vegetation cover",
+          "color_hint": "C0C02F",
+          "nodata": false
+        },
+        {
+          "value": 20,
+          "name": "terra-firma-dense-short-vegetation-83-short-vegetation-cover",
+          "description": "Dense short vegetation - 83% short vegetation cover",
+          "color_hint": "BDBD27",
+          "nodata": false
+        },
+        {
+          "value": 21,
+          "name": "terra-firma-dense-short-vegetation-87-short-vegetation-cover",
+          "description": "Dense short vegetation - 87% short vegetation cover",
+          "color_hint": "B9B91E",
+          "nodata": false
+        },
+        {
+          "value": 22,
+          "name": "terra-firma-dense-short-vegetation-91-short-vegetation-cover",
+          "description": "Dense short vegetation - 91% short vegetation cover",
+          "color_hint": "B6B616",
+          "nodata": false
+        },
+        {
+          "value": 23,
+          "name": "terra-firma-dense-short-vegetation-95-short-vegetation-cover",
+          "description": "Dense short vegetation - 95% short vegetation cover",
+          "color_hint": "B3B30E",
+          "nodata": false
+        },
+        {
+          "value": 24,
+          "name": "terra-firma-dense-short-vegetation-100-short-vegetation-cover",
+          "description": "Dense short vegetation - 100% short vegetation cover",
+          "color_hint": "B0B006",
+          "nodata": false
+        },
+        {
+          "value": 25,
+          "name": "terra-firma-stable-tree-cover-3m-trees",
+          "description": "Stable tree cover - 3m trees",
+          "color_hint": "609C60",
+          "nodata": false
+        },
+        {
+          "value": 26,
+          "name": "terra-firma-stable-tree-cover-4m-trees",
+          "description": "Stable tree cover - 4m trees",
+          "color_hint": "5C985C",
+          "nodata": false
+        },
+        {
+          "value": 27,
+          "name": "terra-firma-stable-tree-cover-5m-trees",
+          "description": "Stable tree cover - 5m trees",
+          "color_hint": "589558",
+          "nodata": false
+        },
+        {
+          "value": 28,
+          "name": "terra-firma-stable-tree-cover-6m-trees",
+          "description": "Stable tree cover - 6m trees",
+          "color_hint": "549254",
+          "nodata": false
+        },
+        {
+          "value": 29,
+          "name": "terra-firma-stable-tree-cover-7m-trees",
+          "description": "Stable tree cover - 7m trees",
+          "color_hint": "508E50",
+          "nodata": false
+        },
+        {
+          "value": 30,
+          "name": "terra-firma-stable-tree-cover-8m-trees",
+          "description": "Stable tree cover - 8m trees",
+          "color_hint": "4C8B4C",
+          "nodata": false
+        },
+        {
+          "value": 31,
+          "name": "terra-firma-stable-tree-cover-9m-trees",
+          "description": "Stable tree cover - 9m trees",
+          "color_hint": "488848",
+          "nodata": false
+        },
+        {
+          "value": 32,
+          "name": "terra-firma-stable-tree-cover-10m-trees",
+          "description": "Stable tree cover - 10m trees",
+          "color_hint": "448544",
+          "nodata": false
+        },
+        {
+          "value": 33,
+          "name": "terra-firma-stable-tree-cover-11m-trees",
+          "description": "Stable tree cover - 11m trees",
+          "color_hint": "408140",
+          "nodata": false
+        },
+        {
+          "value": 34,
+          "name": "terra-firma-stable-tree-cover-12m-trees",
+          "description": "Stable tree cover - 12m trees",
+          "color_hint": "3C7E3C",
+          "nodata": false
+        },
+        {
+          "value": 35,
+          "name": "terra-firma-stable-tree-cover-13m-trees",
+          "description": "Stable tree cover - 13m trees",
+          "color_hint": "387B38",
+          "nodata": false
+        },
+        {
+          "value": 36,
+          "name": "terra-firma-stable-tree-cover-14m-trees",
+          "description": "Stable tree cover - 14m trees",
+          "color_hint": "347834",
+          "nodata": false
+        },
+        {
+          "value": 37,
+          "name": "terra-firma-stable-tree-cover-15m-trees",
+          "description": "Stable tree cover - 15m trees",
+          "color_hint": "317431",
+          "nodata": false
+        },
+        {
+          "value": 38,
+          "name": "terra-firma-stable-tree-cover-16m-trees",
+          "description": "Stable tree cover - 16m trees",
+          "color_hint": "2D712D",
+          "nodata": false
+        },
+        {
+          "value": 39,
+          "name": "terra-firma-stable-tree-cover-17m-trees",
+          "description": "Stable tree cover - 17m trees",
+          "color_hint": "296E29",
+          "nodata": false
+        },
+        {
+          "value": 40,
+          "name": "terra-firma-stable-tree-cover-18m-trees",
+          "description": "Stable tree cover - 18m trees",
+          "color_hint": "256B25",
+          "nodata": false
+        },
+        {
+          "value": 41,
+          "name": "terra-firma-stable-tree-cover-19m-trees",
+          "description": "Stable tree cover - 19m trees",
+          "color_hint": "216721",
+          "nodata": false
+        },
+        {
+          "value": 42,
+          "name": "terra-firma-stable-tree-cover-20m-trees",
+          "description": "Stable tree cover - 20m trees",
+          "color_hint": "1D641D",
+          "nodata": false
+        },
+        {
+          "value": 43,
+          "name": "terra-firma-stable-tree-cover-21m-trees",
+          "description": "Stable tree cover - 21m trees",
+          "color_hint": "196119",
+          "nodata": false
+        },
+        {
+          "value": 44,
+          "name": "terra-firma-stable-tree-cover-22m-trees",
+          "description": "Stable tree cover - 22m trees",
+          "color_hint": "155E15",
+          "nodata": false
+        },
+        {
+          "value": 45,
+          "name": "terra-firma-stable-tree-cover-23m-trees",
+          "description": "Stable tree cover - 23m trees",
+          "color_hint": "115A11",
+          "nodata": false
+        },
+        {
+          "value": 46,
+          "name": "terra-firma-stable-tree-cover-24m-trees",
+          "description": "Stable tree cover - 24m trees",
+          "color_hint": "0D570D",
+          "nodata": false
+        },
+        {
+          "value": 47,
+          "name": "terra-firma-stable-tree-cover-25m-trees",
+          "description": "Stable tree cover - 25m trees",
+          "color_hint": "095409",
+          "nodata": false
+        },
+        {
+          "value": 48,
+          "name": "terra-firma-stable-tree-cover-25m-trees",
+          "description": "Stable tree cover - >25m trees",
+          "color_hint": "065106",
+          "nodata": false
+        },
+        {
+          "value": 49,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-3m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 3m trees",
+          "color_hint": "643700",
+          "nodata": false
+        },
+        {
+          "value": 50,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-4m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 4m trees",
+          "color_hint": "643a00",
+          "nodata": false
+        },
+        {
+          "value": 51,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-5m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 5m trees",
+          "color_hint": "643d00",
+          "nodata": false
+        },
+        {
+          "value": 52,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-6m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 6m trees",
+          "color_hint": "644000",
+          "nodata": false
+        },
+        {
+          "value": 53,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-7m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 7m trees",
+          "color_hint": "644300",
+          "nodata": false
+        },
+        {
+          "value": 54,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-8m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 8m trees",
+          "color_hint": "644600",
+          "nodata": false
+        },
+        {
+          "value": 55,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-9m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 9m trees",
+          "color_hint": "644900",
+          "nodata": false
+        },
+        {
+          "value": 56,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-10m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 10m trees",
+          "color_hint": "654c00",
+          "nodata": false
+        },
+        {
+          "value": 57,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-11m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 11m trees",
+          "color_hint": "654f00",
+          "nodata": false
+        },
+        {
+          "value": 58,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-12m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 12m trees",
+          "color_hint": "655200",
+          "nodata": false
+        },
+        {
+          "value": 59,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-13m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 13m trees",
+          "color_hint": "655500",
+          "nodata": false
+        },
+        {
+          "value": 60,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-14m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 14m trees",
+          "color_hint": "655800",
+          "nodata": false
+        },
+        {
+          "value": 61,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-15m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 15m trees",
+          "color_hint": "655a00",
+          "nodata": false
+        },
+        {
+          "value": 62,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-16m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 16m trees",
+          "color_hint": "655d00",
+          "nodata": false
+        },
+        {
+          "value": 63,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-17m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 17m trees",
+          "color_hint": "656000",
+          "nodata": false
+        },
+        {
+          "value": 64,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-18m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 18m trees",
+          "color_hint": "656300",
+          "nodata": false
+        },
+        {
+          "value": 65,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-19m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 19m trees",
+          "color_hint": "666600",
+          "nodata": false
+        },
+        {
+          "value": 66,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-20m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 20m trees",
+          "color_hint": "666900",
+          "nodata": false
+        },
+        {
+          "value": 67,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-21m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 21m trees",
+          "color_hint": "666c00",
+          "nodata": false
+        },
+        {
+          "value": 68,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-22m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 22m trees",
+          "color_hint": "666f00",
+          "nodata": false
+        },
+        {
+          "value": 69,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-23m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 23m trees",
+          "color_hint": "667200",
+          "nodata": false
+        },
+        {
+          "value": 70,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-24m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 24m trees",
+          "color_hint": "667500",
+          "nodata": false
+        },
+        {
+          "value": 71,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-25m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 25m trees",
+          "color_hint": "667800",
+          "nodata": false
+        },
+        {
+          "value": 72,
+          "name": "terra-firma-tree-cover-with-previous-disturbance-2020-height-25m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - >25m trees",
+          "color_hint": "667b00",
+          "nodata": false
+        },
+        {
+          "value": 73,
+          "name": "terra-firma-tree-height-gain-2020-height-3m-trees",
+          "description": "Tree height gain (2020 height) - 3m trees",
+          "color_hint": "ff99ff",
+          "nodata": false
+        },
+        {
+          "value": 74,
+          "name": "terra-firma-tree-height-gain-2020-height-4m-trees",
+          "description": "Tree height gain (2020 height) - 4m trees",
+          "color_hint": "FC92FC",
+          "nodata": false
+        },
+        {
+          "value": 75,
+          "name": "terra-firma-tree-height-gain-2020-height-5m-trees",
+          "description": "Tree height gain (2020 height) - 5m trees",
+          "color_hint": "F98BF9",
+          "nodata": false
+        },
+        {
+          "value": 76,
+          "name": "terra-firma-tree-height-gain-2020-height-6m-trees",
+          "description": "Tree height gain (2020 height) - 6m trees",
+          "color_hint": "F685F6",
+          "nodata": false
+        },
+        {
+          "value": 77,
+          "name": "terra-firma-tree-height-gain-2020-height-7m-trees",
+          "description": "Tree height gain (2020 height) - 7m trees",
+          "color_hint": "F37EF3",
+          "nodata": false
+        },
+        {
+          "value": 78,
+          "name": "terra-firma-tree-height-gain-2020-height-8m-trees",
+          "description": "Tree height gain (2020 height) - 8m trees",
+          "color_hint": "F077F0",
+          "nodata": false
+        },
+        {
+          "value": 79,
+          "name": "terra-firma-tree-height-gain-2020-height-9m-trees",
+          "description": "Tree height gain (2020 height) - 9m trees",
+          "color_hint": "ED71ED",
+          "nodata": false
+        },
+        {
+          "value": 80,
+          "name": "terra-firma-tree-height-gain-2020-height-10m-trees",
+          "description": "Tree height gain (2020 height) - 10m trees",
+          "color_hint": "EA6AEA",
+          "nodata": false
+        },
+        {
+          "value": 81,
+          "name": "terra-firma-tree-height-gain-2020-height-11m-trees",
+          "description": "Tree height gain (2020 height) - 11m trees",
+          "color_hint": "E763E7",
+          "nodata": false
+        },
+        {
+          "value": 82,
+          "name": "terra-firma-tree-height-gain-2020-height-12m-trees",
+          "description": "Tree height gain (2020 height) - 12m trees",
+          "color_hint": "E45DE4",
+          "nodata": false
+        },
+        {
+          "value": 83,
+          "name": "terra-firma-tree-height-gain-2020-height-13m-trees",
+          "description": "Tree height gain (2020 height) - 13m trees",
+          "color_hint": "E156E1",
+          "nodata": false
+        },
+        {
+          "value": 84,
+          "name": "terra-firma-tree-height-gain-2020-height-14m-trees",
+          "description": "Tree height gain (2020 height) - 14m trees",
+          "color_hint": "DE4FDE",
+          "nodata": false
+        },
+        {
+          "value": 85,
+          "name": "terra-firma-tree-height-gain-2020-height-15m-trees",
+          "description": "Tree height gain (2020 height) - 15m trees",
+          "color_hint": "DB49DB",
+          "nodata": false
+        },
+        {
+          "value": 86,
+          "name": "terra-firma-tree-height-gain-2020-height-16m-trees",
+          "description": "Tree height gain (2020 height) - 16m trees",
+          "color_hint": "D842D8",
+          "nodata": false
+        },
+        {
+          "value": 87,
+          "name": "terra-firma-tree-height-gain-2020-height-17m-trees",
+          "description": "Tree height gain (2020 height) - 17m trees",
+          "color_hint": "D53BD5",
+          "nodata": false
+        },
+        {
+          "value": 88,
+          "name": "terra-firma-tree-height-gain-2020-height-18m-trees",
+          "description": "Tree height gain (2020 height) - 18m trees",
+          "color_hint": "D235D2",
+          "nodata": false
+        },
+        {
+          "value": 89,
+          "name": "terra-firma-tree-height-gain-2020-height-19m-trees",
+          "description": "Tree height gain (2020 height) - 19m trees",
+          "color_hint": "CF2ECF",
+          "nodata": false
+        },
+        {
+          "value": 90,
+          "name": "terra-firma-tree-height-gain-2020-height-20m-trees",
+          "description": "Tree height gain (2020 height) - 20m trees",
+          "color_hint": "CC27CC",
+          "nodata": false
+        },
+        {
+          "value": 91,
+          "name": "terra-firma-tree-height-gain-2020-height-21m-trees",
+          "description": "Tree height gain (2020 height) - 21m trees",
+          "color_hint": "C921C9",
+          "nodata": false
+        },
+        {
+          "value": 92,
+          "name": "terra-firma-tree-height-gain-2020-height-22m-trees",
+          "description": "Tree height gain (2020 height) - 22m trees",
+          "color_hint": "C61AC6",
+          "nodata": false
+        },
+        {
+          "value": 93,
+          "name": "terra-firma-tree-height-gain-2020-height-23m-trees",
+          "description": "Tree height gain (2020 height) - 23m trees",
+          "color_hint": "C313C3",
+          "nodata": false
+        },
+        {
+          "value": 94,
+          "name": "terra-firma-tree-height-gain-2020-height-24m-trees",
+          "description": "Tree height gain (2020 height) - 24m trees",
+          "color_hint": "C00DC0",
+          "nodata": false
+        },
+        {
+          "value": 95,
+          "name": "terra-firma-tree-height-gain-2020-height-25m-trees",
+          "description": "Tree height gain (2020 height) - 25m trees",
+          "color_hint": "BD06BD",
+          "nodata": false
+        },
+        {
+          "value": 96,
+          "name": "terra-firma-tree-height-gain-2020-height-25m-trees",
+          "description": "Tree height gain (2020 height) - >25m trees",
+          "color_hint": "bb00bb",
+          "nodata": false
+        },
+        {
+          "value": 100,
+          "name": "wetland-salt-pan-3-short-vegetation-cover",
+          "description": "Salt pan - 3% short vegetation cover",
+          "color_hint": "BFC0C0",
+          "nodata": false
+        },
+        {
+          "value": 101,
+          "name": "wetland-salt-pan-7-short-vegetation-cover",
+          "description": "Salt pan - 7% short vegetation cover",
+          "color_hint": "B7BDC2",
+          "nodata": false
+        },
+        {
+          "value": 102,
+          "name": "wetland-sparse-vegetation-11-short-vegetation-cover",
+          "description": "Sparse vegetation - 11% short vegetation cover",
+          "color_hint": "AFBBC4",
+          "nodata": false
+        },
+        {
+          "value": 103,
+          "name": "wetland-sparse-vegetation-15-short-vegetation-cover",
+          "description": "Sparse vegetation - 15% short vegetation cover",
+          "color_hint": "A8B8C6",
+          "nodata": false
+        },
+        {
+          "value": 104,
+          "name": "wetland-sparse-vegetation-19-short-vegetation-cover",
+          "description": "Sparse vegetation - 19% short vegetation cover",
+          "color_hint": "A0B6C9",
+          "nodata": false
+        },
+        {
+          "value": 105,
+          "name": "wetland-sparse-vegetation-23-short-vegetation-cover",
+          "description": "Sparse vegetation - 23% short vegetation cover",
+          "color_hint": "99B3CB",
+          "nodata": false
+        },
+        {
+          "value": 106,
+          "name": "wetland-sparse-vegetation-27-short-vegetation-cover",
+          "description": "Sparse vegetation - 27% short vegetation cover",
+          "color_hint": "91B1CD",
+          "nodata": false
+        },
+        {
+          "value": 107,
+          "name": "wetland-sparse-vegetation-31-short-vegetation-cover",
+          "description": "Sparse vegetation - 31% short vegetation cover",
+          "color_hint": "89AFD0",
+          "nodata": false
+        },
+        {
+          "value": 108,
+          "name": "wetland-sparse-vegetation-35-short-vegetation-cover",
+          "description": "Sparse vegetation - 35% short vegetation cover",
+          "color_hint": "82ACD2",
+          "nodata": false
+        },
+        {
+          "value": 109,
+          "name": "wetland-sparse-vegetation-39-short-vegetation-cover",
+          "description": "Sparse vegetation - 39% short vegetation cover",
+          "color_hint": "7AAAD4",
+          "nodata": false
+        },
+        {
+          "value": 110,
+          "name": "wetland-sparse-vegetation-43-short-vegetation-cover",
+          "description": "Sparse vegetation - 43% short vegetation cover",
+          "color_hint": "73A7D6",
+          "nodata": false
+        },
+        {
+          "value": 111,
+          "name": "wetland-sparse-vegetation-47-short-vegetation-cover",
+          "description": "Sparse vegetation - 47% short vegetation cover",
+          "color_hint": "6BA5D9",
+          "nodata": false
+        },
+        {
+          "value": 112,
+          "name": "wetland-sparse-vegetation-51-short-vegetation-cover",
+          "description": "Sparse vegetation - 51% short vegetation cover",
+          "color_hint": "64A3DB",
+          "nodata": false
+        },
+        {
+          "value": 113,
+          "name": "wetland-sparse-vegetation-55-short-vegetation-cover",
+          "description": "Sparse vegetation - 55% short vegetation cover",
+          "color_hint": "5CA0DD",
+          "nodata": false
+        },
+        {
+          "value": 114,
+          "name": "wetland-sparse-vegetation-59-short-vegetation-cover",
+          "description": "Sparse vegetation - 59% short vegetation cover",
+          "color_hint": "549EE0",
+          "nodata": false
+        },
+        {
+          "value": 115,
+          "name": "wetland-sparse-vegetation-63-short-vegetation-cover",
+          "description": "Sparse vegetation - 63% short vegetation cover",
+          "color_hint": "4D9BE2",
+          "nodata": false
+        },
+        {
+          "value": 116,
+          "name": "wetland-sparse-vegetation-67-short-vegetation-cover",
+          "description": "Sparse vegetation - 67% short vegetation cover",
+          "color_hint": "4599E4",
+          "nodata": false
+        },
+        {
+          "value": 117,
+          "name": "wetland-sparse-vegetation-71-short-vegetation-cover",
+          "description": "Sparse vegetation - 71% short vegetation cover",
+          "color_hint": "3E96E6",
+          "nodata": false
+        },
+        {
+          "value": 118,
+          "name": "wetland-sparse-vegetation-75-short-vegetation-cover",
+          "description": "Sparse vegetation - 75% short vegetation cover",
+          "color_hint": "3694E9",
+          "nodata": false
+        },
+        {
+          "value": 119,
+          "name": "wetland-dense-short-vegetation-79-short-vegetation-cover",
+          "description": "Dense short vegetation - 79% short vegetation cover",
+          "color_hint": "2E92EB",
+          "nodata": false
+        },
+        {
+          "value": 120,
+          "name": "wetland-dense-short-vegetation-83-short-vegetation-cover",
+          "description": "Dense short vegetation - 83% short vegetation cover",
+          "color_hint": "278FED",
+          "nodata": false
+        },
+        {
+          "value": 121,
+          "name": "wetland-dense-short-vegetation-87-short-vegetation-cover",
+          "description": "Dense short vegetation - 87% short vegetation cover",
+          "color_hint": "1F8DF0",
+          "nodata": false
+        },
+        {
+          "value": 122,
+          "name": "wetland-dense-short-vegetation-91-short-vegetation-cover",
+          "description": "Dense short vegetation - 91% short vegetation cover",
+          "color_hint": "188AF2",
+          "nodata": false
+        },
+        {
+          "value": 123,
+          "name": "wetland-dense-short-vegetation-95-short-vegetation-cover",
+          "description": "Dense short vegetation - 95% short vegetation cover",
+          "color_hint": "1088F4",
+          "nodata": false
+        },
+        {
+          "value": 124,
+          "name": "wetland-dense-short-vegetation-100-short-vegetation-cover",
+          "description": "Dense short vegetation - 100% short vegetation cover",
+          "color_hint": "0986F7",
+          "nodata": false
+        },
+        {
+          "value": 125,
+          "name": "wetland-stable-tree-cover-3m-trees",
+          "description": "Stable tree cover - 3m trees",
+          "color_hint": "55A5A5",
+          "nodata": false
+        },
+        {
+          "value": 126,
+          "name": "wetland-stable-tree-cover-4m-trees",
+          "description": "Stable tree cover - 4m trees",
+          "color_hint": "53A1A2",
+          "nodata": false
+        },
+        {
+          "value": 127,
+          "name": "wetland-stable-tree-cover-5m-trees",
+          "description": "Stable tree cover - 5m trees",
+          "color_hint": "519E9F",
+          "nodata": false
+        },
+        {
+          "value": 128,
+          "name": "wetland-stable-tree-cover-6m-trees",
+          "description": "Stable tree cover - 6m trees",
+          "color_hint": "4F9B9C",
+          "nodata": false
+        },
+        {
+          "value": 129,
+          "name": "wetland-stable-tree-cover-7m-trees",
+          "description": "Stable tree cover - 7m trees",
+          "color_hint": "4D989A",
+          "nodata": false
+        },
+        {
+          "value": 130,
+          "name": "wetland-stable-tree-cover-8m-trees",
+          "description": "Stable tree cover - 8m trees",
+          "color_hint": "4B9597",
+          "nodata": false
+        },
+        {
+          "value": 131,
+          "name": "wetland-stable-tree-cover-9m-trees",
+          "description": "Stable tree cover - 9m trees",
+          "color_hint": "499294",
+          "nodata": false
+        },
+        {
+          "value": 132,
+          "name": "wetland-stable-tree-cover-10m-trees",
+          "description": "Stable tree cover - 10m trees",
+          "color_hint": "478F91",
+          "nodata": false
+        },
+        {
+          "value": 133,
+          "name": "wetland-stable-tree-cover-11m-trees",
+          "description": "Stable tree cover - 11m trees",
+          "color_hint": "458B8F",
+          "nodata": false
+        },
+        {
+          "value": 134,
+          "name": "wetland-stable-tree-cover-12m-trees",
+          "description": "Stable tree cover - 12m trees",
+          "color_hint": "43888C",
+          "nodata": false
+        },
+        {
+          "value": 135,
+          "name": "wetland-stable-tree-cover-13m-trees",
+          "description": "Stable tree cover - 13m trees",
+          "color_hint": "418589",
+          "nodata": false
+        },
+        {
+          "value": 136,
+          "name": "wetland-stable-tree-cover-14m-trees",
+          "description": "Stable tree cover - 14m trees",
+          "color_hint": "3F8286",
+          "nodata": false
+        },
+        {
+          "value": 137,
+          "name": "wetland-stable-tree-cover-15m-trees",
+          "description": "Stable tree cover - 15m trees",
+          "color_hint": "3D7F84",
+          "nodata": false
+        },
+        {
+          "value": 138,
+          "name": "wetland-stable-tree-cover-16m-trees",
+          "description": "Stable tree cover - 16m trees",
+          "color_hint": "3B7C81",
+          "nodata": false
+        },
+        {
+          "value": 139,
+          "name": "wetland-stable-tree-cover-17m-trees",
+          "description": "Stable tree cover - 17m trees",
+          "color_hint": "39797E",
+          "nodata": false
+        },
+        {
+          "value": 140,
+          "name": "wetland-stable-tree-cover-18m-trees",
+          "description": "Stable tree cover - 18m trees",
+          "color_hint": "37767B",
+          "nodata": false
+        },
+        {
+          "value": 141,
+          "name": "wetland-stable-tree-cover-19m-trees",
+          "description": "Stable tree cover - 19m trees",
+          "color_hint": "357279",
+          "nodata": false
+        },
+        {
+          "value": 142,
+          "name": "wetland-stable-tree-cover-20m-trees",
+          "description": "Stable tree cover - 20m trees",
+          "color_hint": "336F76",
+          "nodata": false
+        },
+        {
+          "value": 143,
+          "name": "wetland-stable-tree-cover-21m-trees",
+          "description": "Stable tree cover - 21m trees",
+          "color_hint": "316C73",
+          "nodata": false
+        },
+        {
+          "value": 144,
+          "name": "wetland-stable-tree-cover-22m-trees",
+          "description": "Stable tree cover - 22m trees",
+          "color_hint": "2F6970",
+          "nodata": false
+        },
+        {
+          "value": 145,
+          "name": "wetland-stable-tree-cover-23m-trees",
+          "description": "Stable tree cover - 23m trees",
+          "color_hint": "2D666E",
+          "nodata": false
+        },
+        {
+          "value": 146,
+          "name": "wetland-stable-tree-cover-24m-trees",
+          "description": "Stable tree cover - 24m trees",
+          "color_hint": "2B636B",
+          "nodata": false
+        },
+        {
+          "value": 147,
+          "name": "wetland-stable-tree-cover-25m-trees",
+          "description": "Stable tree cover - 25m trees",
+          "color_hint": "296068",
+          "nodata": false
+        },
+        {
+          "value": 148,
+          "name": "wetland-stable-tree-cover-25m-trees",
+          "description": "Stable tree cover - >25m trees",
+          "color_hint": "285D66",
+          "nodata": false
+        },
+        {
+          "value": 149,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-3m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 3m trees",
+          "color_hint": "bb93b0",
+          "nodata": false
+        },
+        {
+          "value": 150,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-4m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 4m trees",
+          "color_hint": "B78FAC",
+          "nodata": false
+        },
+        {
+          "value": 151,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-5m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 5m trees",
+          "color_hint": "B48CA9",
+          "nodata": false
+        },
+        {
+          "value": 152,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-6m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 6m trees",
+          "color_hint": "B189A6",
+          "nodata": false
+        },
+        {
+          "value": 153,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-7m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 7m trees",
+          "color_hint": "AE85A2",
+          "nodata": false
+        },
+        {
+          "value": 154,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-8m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 8m trees",
+          "color_hint": "AA829F",
+          "nodata": false
+        },
+        {
+          "value": 155,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-9m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 9m trees",
+          "color_hint": "A77F9C",
+          "nodata": false
+        },
+        {
+          "value": 156,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-10m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 10m trees",
+          "color_hint": "A47B99",
+          "nodata": false
+        },
+        {
+          "value": 157,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-11m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 11m trees",
+          "color_hint": "A17895",
+          "nodata": false
+        },
+        {
+          "value": 158,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-12m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 12m trees",
+          "color_hint": "9E7592",
+          "nodata": false
+        },
+        {
+          "value": 159,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-13m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 13m trees",
+          "color_hint": "9A718F",
+          "nodata": false
+        },
+        {
+          "value": 160,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-14m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 14m trees",
+          "color_hint": "976E8C",
+          "nodata": false
+        },
+        {
+          "value": 161,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-15m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 15m trees",
+          "color_hint": "946B88",
+          "nodata": false
+        },
+        {
+          "value": 162,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-16m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 16m trees",
+          "color_hint": "916885",
+          "nodata": false
+        },
+        {
+          "value": 163,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-17m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 17m trees",
+          "color_hint": "8D6482",
+          "nodata": false
+        },
+        {
+          "value": 164,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-18m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 18m trees",
+          "color_hint": "8A617F",
+          "nodata": false
+        },
+        {
+          "value": 165,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-19m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 19m trees",
+          "color_hint": "875E7B",
+          "nodata": false
+        },
+        {
+          "value": 166,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-20m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 20m trees",
+          "color_hint": "845A78",
+          "nodata": false
+        },
+        {
+          "value": 167,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-21m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 21m trees",
+          "color_hint": "815775",
+          "nodata": false
+        },
+        {
+          "value": 168,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-22m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 22m trees",
+          "color_hint": "7D5472",
+          "nodata": false
+        },
+        {
+          "value": 169,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-23m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 23m trees",
+          "color_hint": "7A506E",
+          "nodata": false
+        },
+        {
+          "value": 170,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-24m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 24m trees",
+          "color_hint": "774D6B",
+          "nodata": false
+        },
+        {
+          "value": 171,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-25m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - 25m trees",
+          "color_hint": "744A68",
+          "nodata": false
+        },
+        {
+          "value": 172,
+          "name": "wetland-tree-cover-with-previous-disturbance-2020-height-25m-trees",
+          "description": "Tree cover with previous disturbance (2020 height) - >25m trees",
+          "color_hint": "714765",
+          "nodata": false
+        },
+        {
+          "value": 173,
+          "name": "wetland-tree-height-gain-2020-height-3m-trees",
+          "description": "Tree height gain (2020 height) - 3m trees",
+          "color_hint": "de7cbb",
+          "nodata": false
+        },
+        {
+          "value": 174,
+          "name": "wetland-tree-height-gain-2020-height-4m-trees",
+          "description": "Tree height gain (2020 height) - 4m trees",
+          "color_hint": "DA77B7",
+          "nodata": false
+        },
+        {
+          "value": 175,
+          "name": "wetland-tree-height-gain-2020-height-5m-trees",
+          "description": "Tree height gain (2020 height) - 5m trees",
+          "color_hint": "D772B3",
+          "nodata": false
+        },
+        {
+          "value": 176,
+          "name": "wetland-tree-height-gain-2020-height-6m-trees",
+          "description": "Tree height gain (2020 height) - 6m trees",
+          "color_hint": "D46EAF",
+          "nodata": false
+        },
+        {
+          "value": 177,
+          "name": "wetland-tree-height-gain-2020-height-7m-trees",
+          "description": "Tree height gain (2020 height) - 7m trees",
+          "color_hint": "D169AB",
+          "nodata": false
+        },
+        {
+          "value": 178,
+          "name": "wetland-tree-height-gain-2020-height-8m-trees",
+          "description": "Tree height gain (2020 height) - 8m trees",
+          "color_hint": "CE64A8",
+          "nodata": false
+        },
+        {
+          "value": 179,
+          "name": "wetland-tree-height-gain-2020-height-9m-trees",
+          "description": "Tree height gain (2020 height) - 9m trees",
+          "color_hint": "CB60A4",
+          "nodata": false
+        },
+        {
+          "value": 180,
+          "name": "wetland-tree-height-gain-2020-height-10m-trees",
+          "description": "Tree height gain (2020 height) - 10m trees",
+          "color_hint": "C85BA0",
+          "nodata": false
+        },
+        {
+          "value": 181,
+          "name": "wetland-tree-height-gain-2020-height-11m-trees",
+          "description": "Tree height gain (2020 height) - 11m trees",
+          "color_hint": "C4579C",
+          "nodata": false
+        },
+        {
+          "value": 182,
+          "name": "wetland-tree-height-gain-2020-height-12m-trees",
+          "description": "Tree height gain (2020 height) - 12m trees",
+          "color_hint": "C15298",
+          "nodata": false
+        },
+        {
+          "value": 183,
+          "name": "wetland-tree-height-gain-2020-height-13m-trees",
+          "description": "Tree height gain (2020 height) - 13m trees",
+          "color_hint": "BE4D95",
+          "nodata": false
+        },
+        {
+          "value": 184,
+          "name": "wetland-tree-height-gain-2020-height-14m-trees",
+          "description": "Tree height gain (2020 height) - 14m trees",
+          "color_hint": "BB4991",
+          "nodata": false
+        },
+        {
+          "value": 185,
+          "name": "wetland-tree-height-gain-2020-height-15m-trees",
+          "description": "Tree height gain (2020 height) - 15m trees",
+          "color_hint": "B8448D",
+          "nodata": false
+        },
+        {
+          "value": 186,
+          "name": "wetland-tree-height-gain-2020-height-16m-trees",
+          "description": "Tree height gain (2020 height) - 16m trees",
+          "color_hint": "B54089",
+          "nodata": false
+        },
+        {
+          "value": 187,
+          "name": "wetland-tree-height-gain-2020-height-17m-trees",
+          "description": "Tree height gain (2020 height) - 17m trees",
+          "color_hint": "B23B86",
+          "nodata": false
+        },
+        {
+          "value": 188,
+          "name": "wetland-tree-height-gain-2020-height-18m-trees",
+          "description": "Tree height gain (2020 height) - 18m trees",
+          "color_hint": "AF3682",
+          "nodata": false
+        },
+        {
+          "value": 189,
+          "name": "wetland-tree-height-gain-2020-height-19m-trees",
+          "description": "Tree height gain (2020 height) - 19m trees",
+          "color_hint": "AB327E",
+          "nodata": false
+        },
+        {
+          "value": 190,
+          "name": "wetland-tree-height-gain-2020-height-20m-trees",
+          "description": "Tree height gain (2020 height) - 20m trees",
+          "color_hint": "A82D7A",
+          "nodata": false
+        },
+        {
+          "value": 191,
+          "name": "wetland-tree-height-gain-2020-height-21m-trees",
+          "description": "Tree height gain (2020 height) - 21m trees",
+          "color_hint": "A52976",
+          "nodata": false
+        },
+        {
+          "value": 192,
+          "name": "wetland-tree-height-gain-2020-height-22m-trees",
+          "description": "Tree height gain (2020 height) - 22m trees",
+          "color_hint": "A22473",
+          "nodata": false
+        },
+        {
+          "value": 193,
+          "name": "wetland-tree-height-gain-2020-height-23m-trees",
+          "description": "Tree height gain (2020 height) - 23m trees",
+          "color_hint": "9F1F6F",
+          "nodata": false
+        },
+        {
+          "value": 194,
+          "name": "wetland-tree-height-gain-2020-height-24m-trees",
+          "description": "Tree height gain (2020 height) - 24m trees",
+          "color_hint": "9C1B6B",
+          "nodata": false
+        },
+        {
+          "value": 195,
+          "name": "wetland-tree-height-gain-2020-height-25m-trees",
+          "description": "Tree height gain (2020 height) - 25m trees",
+          "color_hint": "991667",
+          "nodata": false
+        },
+        {
+          "value": 196,
+          "name": "wetland-tree-height-gain-2020-height-25m-trees",
+          "description": "Tree height gain (2020 height) - >25m trees",
+          "color_hint": "961264",
+          "nodata": false
+        },
+        {
+          "value": 208,
+          "name": "open-surface-water-open-surface-water-permanent-water",
+          "description": "Open surface water - permanent water",
+          "color_hint": "0000BA",
+          "nodata": false
+        },
+        {
+          "value": 209,
+          "name": "open-surface-water-open-surface-water-persistent-water-loss",
+          "description": "Open surface water - persistent water loss",
+          "color_hint": "040464",
+          "nodata": false
+        },
+        {
+          "value": 210,
+          "name": "open-surface-water-open-surface-water-persistent-water-gain",
+          "description": "Open surface water - persistent water gain",
+          "color_hint": "0000FF",
+          "nodata": false
+        },
+        {
+          "value": 211,
+          "name": "open-surface-water-open-surface-water-variable-water",
+          "description": "Open surface water - variable water",
+          "color_hint": "3051cf",
+          "nodata": false
+        },
+        {
+          "value": 240,
+          "name": "short-vegetation-short-vegetation-short-vegetation-after-tree-loss",
+          "description": "Short vegetation - short vegetation after tree loss",
+          "color_hint": "ff2828",
+          "nodata": false
+        },
+        {
+          "value": 241,
+          "name": "snow-ice-snow-ice-stable",
+          "description": "Snow/ice - stable",
+          "color_hint": "ffffff",
+          "nodata": false
+        },
+        {
+          "value": 242,
+          "name": "snow-ice-snow-ice-snow-ice-gain",
+          "description": "Snow/ice - snow/ice gain",
+          "color_hint": "d0ffff",
+          "nodata": false
+        },
+        {
+          "value": 243,
+          "name": "snow-ice-snow-ice-snow-ice-loss",
+          "description": "Snow/ice - snow/ice loss",
+          "color_hint": "ffe0d0",
+          "nodata": false
+        },
+        {
+          "value": 244,
+          "name": "cropland-cropland-stable-cropland",
+          "description": "Cropland - stable cropland",
+          "color_hint": "ff7d00",
+          "nodata": false
+        },
+        {
+          "value": 245,
+          "name": "cropland-cropland-cropland-gain-from-trees",
+          "description": "Cropland - cropland gain from trees",
+          "color_hint": "fac800",
+          "nodata": false
+        },
+        {
+          "value": 246,
+          "name": "cropland-cropland-cropland-gain-from-wetland-veg",
+          "description": "Cropland - cropland gain from wetland veg",
+          "color_hint": "c86400",
+          "nodata": false
+        },
+        {
+          "value": 247,
+          "name": "cropland-cropland-cropland-gain-from-other",
+          "description": "Cropland - cropland gain from other",
+          "color_hint": "fff000",
+          "nodata": false
+        },
+        {
+          "value": 248,
+          "name": "cropland-loss-cropland-loss-cropland-loss-to-tree",
+          "description": "Cropland loss - cropland loss to tree",
+          "color_hint": "afcd96",
+          "nodata": false
+        },
+        {
+          "value": 249,
+          "name": "cropland-loss-cropland-loss-cropland-loss-to-short-veg-other",
+          "description": "Cropland loss - cropland loss to short veg/other",
+          "color_hint": "afcd96",
+          "nodata": false
+        },
+        {
+          "value": 250,
+          "name": "built-up-built-up-stable-built-up",
+          "description": "Built-up - stable built-up",
+          "color_hint": "64dcdc",
+          "nodata": false
+        },
+        {
+          "value": 251,
+          "name": "built-up-built-up-built-up-gain-from-trees",
+          "description": "Built-up - built-up gain from trees",
+          "color_hint": "00ffff",
+          "nodata": false
+        },
+        {
+          "value": 252,
+          "name": "built-up-built-up-built-up-gain-from-crop",
+          "description": "Built-up - built-up gain from crop",
+          "color_hint": "00ffff",
+          "nodata": false
+        },
+        {
+          "value": 253,
+          "name": "built-up-built-up-built-up-from-other",
+          "description": "Built-up - built-up from other",
+          "color_hint": "00ffff",
+          "nodata": false
+        },
+        {
+          "value": 254,
+          "name": "ocean-ocean",
+          "description": "Ocean",
+          "color_hint": "111133",
+          "nodata": false
+        },
+        {
+          "value": 255,
+          "name": "no-data",
+          "description": "",
+          "nodata": true
+        }
+      ],
+      "type": "image/tiff; application=geotiff"
+    }
+  },
+  "title": "GLAD: Net change of land cover and land use between 2000 and 2020",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -80.0,
+          30.0,
+          -70.0,
+          40.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-01-01T00:00:00Z",
+          "2020-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "land cover",
+    "land use",
+    "land use change",
+    "vegetation",
+    "surface water"
+  ],
+  "providers": [
+    {
+      "name": "University of Maryland Global Land Analysis & Discovery laboratory (GLAD)",
+      "roles": [
+        "licensor",
+        "host",
+        "producer"
+      ],
+      "url": "https://glad.umd.edu/dataset/GLCLUC2020"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "https://glad.umd.edu/sites/default/files/styles/projects/public/datasets_glulc.jpg?itok=bxS-HPMi",
+      "type": "image/jpeg",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  }
+}
